@@ -1,3 +1,5 @@
+# https://school.programmers.co.kr/learn/courses/30/lessons/181930
+
 '''1 부터 6 까지 숫자가 적힌 주사위가 세 개 있습니다.
     세 주사위를 굴렸을 때 나온 숫자를 각각 a, b, c 라 했을 때
     얻는 점수는 다음과 같습니다.
