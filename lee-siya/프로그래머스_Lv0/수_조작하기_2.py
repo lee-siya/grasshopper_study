@@ -1,3 +1,5 @@
+# https://school.programmers.co.kr/learn/courses/30/lessons/181925
+
 '''
 정수 배열 numLog 가 주어집니다.
 처음에 numLog[0] 에서 부터 시작해 "w", "a", "s", "d" 로 이루어진 문자열을 입력받아 순서대로 다음과 같은 조작을 했다고 합시다.
