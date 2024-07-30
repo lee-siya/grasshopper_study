@@ -1,3 +1,5 @@
+# https://school.programmers.co.kr/learn/courses/30/lessons/181923
+
 '''
 정수 배열 arr 와 2차원 정수 배열 queries 이 주어집니다.
 queries 의 원소는 각각 하나의 query 를 나타내며, [s, e, k] 꼴입니다.
