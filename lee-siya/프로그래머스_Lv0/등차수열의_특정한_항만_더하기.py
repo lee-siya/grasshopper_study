@@ -1,3 +1,5 @@
+# https://school.programmers.co.kr/learn/courses/30/lessons/181931
+
 '''
 두 정수 a, d 와 길이가 n 인 boolean 배열 included 가 주어집니다.
 첫째항이 a, 공차가 d 인 등차수열에서 included[i] 가 i + 1 항을 의미할 때,
