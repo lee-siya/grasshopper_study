@@ -1,3 +1,5 @@
+# https://school.programmers.co.kr/learn/courses/30/lessons/181926
+
 '''
 정수 n 과 문자열 control 이 주어집니다. control 은 "w", "a", "s", "d" 의 4개의 문자로 이루어져 있으며,
 control 의 앞에서 부터 순서대로 문자에 따라 n 의 값을 바꿉니다.
