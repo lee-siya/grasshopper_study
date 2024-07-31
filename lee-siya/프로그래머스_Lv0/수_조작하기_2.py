@@ -1,3 +1,5 @@
+# https://school.programmers.co.kr/learn/courses/30/lessons/181925
+
 '''
 정수 배열 numLog 가 주어집니다.
 처음에 numLog[0] 에서 부터 시작해 "w", "a", "s", "d" 로 이루어진 문자열을 입력받아 순서대로 다음과 같은 조작을 했다고 합시다.
@@ -19,26 +21,26 @@ def solution(numLog):
     # numLog[0]부터 시작해서 그 다음 값의 차이를 판단하고 (+1, -1, +10, -10) 문제에 조건과 맞는 문자열을 answer 에 이어붙여주는 for, if 문 만들기
     index = 0
     for _ in range(len(numLog)-1):
-        
+
         judge = numLog[index]
         judge2 = numLog[index+1]
-        
+
         if judge2 - judge == 1:
             answer += "w"
             index += 1
-            
+
         elif judge2 - judge == -1:
             answer += "s"
             index += 1
-            
+
         elif judge2 - judge == 10:
             answer += "d"
             index += 1
-            
+
         elif judge2 - judge == -10:
-            answer += "a"  
+            answer += "a"
             index += 1
-        
+
     return answer
 
 
