@@ -12,13 +12,13 @@ def solution(a, d, included):
     for _ in range(len(included)):
         my_list.append(value)
         value += d
-        
+
     # included 의 값이 True 일 때 결과 리스트에 추가
     result = []
     for value, True_find in zip(my_list, included):
         if True_find == True:
             result.append(value)
-    
+
     # sum 을 써서 answer로 return 하기.
     answer = sum(result)
     return answer
@@ -33,5 +33,5 @@ print(solution(a,d,included))
 
 '''처음엔 included 에서 false에 해당하는 인덱스 값을 얻고
    등차수열 리스트에서 제거하고 합을 구하는 것을 생각했는데
-   enumerate() 함수와 del my_list[], for 문을 썼다가 
+   enumerate() 함수와 del my_list[], for 문을 썼다가
    삭제를 한번하면 인덱스가 앞으로 땡겨지는걸 생각하지 못함 그래서 수정함'''

@@ -7,15 +7,15 @@ return 하도록 solution 함수를 완성해주세요.'''
 
 
 def solution(num_list):
-    
+
     # 모든 원소들의 곱을 구함
     multiply = 1
     for num in num_list:
         multiply *=num
-        
+
     # 모든 원소들의 합의 제곱을 구함
     square = (sum(num_list))**2
-    
+
     # 조건에 따라 if 문 만들기
     if multiply < square:
         answer = 1

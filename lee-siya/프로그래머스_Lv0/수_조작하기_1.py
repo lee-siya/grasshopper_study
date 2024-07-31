@@ -13,10 +13,10 @@ control 의 앞에서 부터 순서대로 문자에 따라 n 의 값을 바꿉�
 '''
 
 def solution(n,control):
-    
+
     # control 을 리스트화 시키고 순서대로 꺼내와 n 값에 적용해야 하기에 for 문 활용함
     for judge in list(control):
-        
+
         # control 에서 꺼내온 judge 가 "w" 와 같다면 조건 실행 "s", "d", "a" 문제 조건에 따라 if 문 만들기
         if judge == "w":
             n += 1

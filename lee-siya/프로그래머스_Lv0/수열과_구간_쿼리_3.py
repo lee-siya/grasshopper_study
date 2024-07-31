@@ -11,10 +11,10 @@ queries 의 원소는 각각 하나의 query 를 나타내며, [i, j] 꼴입니�
 
 def solution(arr, queries):
     for i, j in queries:
-        
+
         # 리스트에 속한 변수 위치를 swap 하는 법을 배움
         arr[i], arr[j] = arr[j], arr[i]
-        
+
     answer = arr
     return answer
 

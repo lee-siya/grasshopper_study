@@ -21,26 +21,26 @@ def solution(numLog):
     # numLog[0]부터 시작해서 그 다음 값의 차이를 판단하고 (+1, -1, +10, -10) 문제에 조건과 맞는 문자열을 answer 에 이어붙여주는 for, if 문 만들기
     index = 0
     for _ in range(len(numLog)-1):
-        
+
         judge = numLog[index]
         judge2 = numLog[index+1]
-        
+
         if judge2 - judge == 1:
             answer += "w"
             index += 1
-            
+
         elif judge2 - judge == -1:
             answer += "s"
             index += 1
-            
+
         elif judge2 - judge == 10:
             answer += "d"
             index += 1
-            
+
         elif judge2 - judge == -10:
-            answer += "a"  
+            answer += "a"
             index += 1
-        
+
     return answer
 
 

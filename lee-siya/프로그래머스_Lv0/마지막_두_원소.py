@@ -12,16 +12,16 @@ def solution(num_list):
 
     # 마지막 원소
     last = num_list[-1]
-    
+
     # 그전 원소
     last2 = num_list[-2]
-    
+
     # 조건에 따라 if 문 만들기
     if last > last2:
         num_list.append(last - last2)
     elif last <= last2:
         num_list.append(last * 2)
-        
+
     answer = num_list
     return answer
 
