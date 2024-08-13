@@ -18,10 +18,10 @@ def boolean_or(a, b):
     return result
     
 def solution(x1, x2, x3, x4):
-    result1 = boolean_or(x1,x2)
-    result2 = boolean_or(x3,x4)
+    result1 = boolean_or(x1, x2)
+    result2 = boolean_or(x3, x4)
     if result1 == True and result2 == False:
-        answer = not boolean_or(result1,result2)
+        answer = not boolean_or(result1, result2)
     elif result1 == False and result2 == True:
         answer = not boolean_or(result1, result2)
     else:
