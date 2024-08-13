@@ -27,8 +27,7 @@ def solution(a, b, c, d):
         for n in num_list:
             if n not in qr:
                 qr.append(n)
-            else:
-                if n not in p:
+            elif n not in p:
                     p.append(n)
         p = set(p)
         qr = set(qr)
