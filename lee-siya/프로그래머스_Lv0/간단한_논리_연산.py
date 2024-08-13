@@ -6,7 +6,7 @@ boolean 변수 x1, x2, x3, x4 가 매개변수로 주어질 때,
 
 (x1 ∨ x2) ∧ (x3 ∨ x4)
 '''
-def TrueAndFalse(a, b):
+def boolean_or(a, b):
     if a == True and b == True:
         result = True
     elif a == True and b == False:
@@ -18,14 +18,14 @@ def TrueAndFalse(a, b):
     return result
     
 def solution(x1, x2, x3, x4):
-    result1 = TrueAndFalse(x1,x2)
-    result2 = TrueAndFalse(x3,x4)
+    result1 = boolean_or(x1,x2)
+    result2 = boolean_or(x3,x4)
     if result1 == True and result2 == False:
-        answer = not TrueAndFalse(result1,result2)
+        answer = not boolean_or(result1,result2)
     elif result1 == False and result2 == True:
-        answer = not TrueAndFalse(result1, result2)
+        answer = not boolean_or(result1, result2)
     else:
-        answer = TrueAndFalse(result1, result2)
+        answer = boolean_or(result1, result2)
     return answer
 
 
