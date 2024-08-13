@@ -8,9 +8,14 @@ my_string 에 queries 의 명령을 순서대로 처리한 후의 문자열을 r
 
 def solution(my_string, queries):
     for s, e in queries:
-        extracted_text = my_string[s:e+1]
+        
+        start = s
+        end = e + 1
+        
+        extracted_text = my_string[start:end]
         reversed_string = extracted_text[::-1]
-        my_string = my_string[:s] + reversed_string + my_string[e+1:]
+        my_string = my_string[:start] + reversed_string + my_string[end:]
+        
     answer = my_string
     return answer
 
