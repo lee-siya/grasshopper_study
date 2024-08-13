@@ -7,10 +7,13 @@
 '''
 
 def solution(number):
+    
     sum_number= 0
+    
     for num in number:
         sum_number += int(num)
     answer = sum_number % 9
+    
     return answer
 
 # map 활용
