@@ -4,7 +4,7 @@
 
 평면에서 커브의 임의의 점에서 이 점을 통과하는 커브에 가장 근사한 선이 접선입니다. 또한 이 점을 통과하고 커브에 접하는 가장 근사한 원을 찾을 수 있습니다. 이 원의 반지름의 역수는 이 지점에서 커브의 곡률입니다.
 
-![figur52](img\Figure_(52).png) <br>
+![Figure_(52)](https://github.com/user-attachments/assets/0f5f26fc-7601-4694-a838-6970023e2459) <br>
 *Figure (52): Examining curve curvature at different points.* <br>
 *그림 (52): 다양한 지점에서 커브 곡률 살펴보기.*
 
