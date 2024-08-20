@@ -16,7 +16,7 @@ C = 평면의 세 번째 점 <br>
 정규 벡터 n은 다음과 같이 구할 수 있습니다: <br>
 **n** = ( **b** - **a** ) × ( **c** - **a** )
 
-![figure18](img\Figure_(18).png) <br>
+![Figure_(18)](https://github.com/user-attachments/assets/a17c8e66-774c-43ca-9103-3c603e6b956f) <br>
 *Figure (18): Vectors and planes* <br>
 *그림 (18): 벡터와 평면*
 
