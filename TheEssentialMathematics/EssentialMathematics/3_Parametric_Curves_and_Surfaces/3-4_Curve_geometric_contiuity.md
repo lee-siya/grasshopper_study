@@ -7,6 +7,6 @@
 + **G1** (Tangent continuous) : 곡률과 접선은 공통 끝점에서 두 커브 세그먼트 모두에 대해 일치합니다.
 + **GN** : 곡선은 더 높은 차수에 일치합니다.
 
-![figure51](img\Figure_(51).png) <br>
+![Figure_(51)](https://github.com/user-attachments/assets/dd9ce0eb-a4ae-476d-90c2-7c9c4f3f70a6) <br>
 *Figure (51): Examining curve continuity with curvature graph analysis.* <br>
 *그림 (51): 곡률 그래프 분석으로 곡선 연속성 검사하기.*
