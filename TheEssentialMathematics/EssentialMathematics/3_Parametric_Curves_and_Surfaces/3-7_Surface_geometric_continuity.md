@@ -8,6 +8,6 @@ G1 (Tangent continuous) : 두 서페이스의 대응하는 탄젠트입니다. �
 G2 (Curvature continuous) : 곡률과 접선은 공통 가장자리에서 두 표면 모두에 대해 일치합니다. <br>
 GN : 서페이스가 상위 순서에 동의합니다.
 
-![figure59](img\Figure_(59).png) <br>
+![Figure_(59)](https://github.com/user-attachments/assets/717f0969-8cc6-4749-9a1b-2057c08b5bc5) <br>
 *Figure (59): Examining surface continuity with zebra analysis.* <br>
 *그림 (59): 지브라 분석을 통한 표면 연속성 검사.*
