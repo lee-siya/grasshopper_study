@@ -2,7 +2,7 @@
 
 벡터 선 방정식은 3D 모델링 애플리케이션과 컴퓨터 그래픽에 사용됩니다.
 
-![figure16](img\Figure_(16).png) <br>
+![Figure_(16)](https://github.com/user-attachments/assets/7249fb54-3fd3-4ca9-a958-ac8a68a151ef) <br>
 *Figure (16): Vector equation of a line.* <br>
 *그림 (16): 선의 벡터 방정식.*
 
@@ -55,7 +55,7 @@ And since we need to find midpoint, then: <br>
 따라서 다음과 같이 말할 수 있습니다: <br>
 M = Q + 0.5 * **a**
 
-![figure17](img\Figure_(17).png) <br>
+![Figure_(17)](https://github.com/user-attachments/assets/d57f0f5b-7ccf-4e2d-8ecf-c89e82503aa9) <br>
 *Figure (17): Find the midpoint between two input points.* <br>
 *그림 (17): 두 입력점 사이의 중간점 찾기.*
 
