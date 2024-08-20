@@ -7,7 +7,7 @@
 2\***a** = <2\*4, 2\*3, 2\*0> <br>
 2\***a** = <8, 6, 0>
 
-![figure7](img\Figure_(7).png) <br>
+![Figure_(7)](https://github.com/user-attachments/assets/818a169d-4221-4c26-b81b-03a25040a723) <br>
 *Figure (7): Vector scalar operation* <br>
 *그림 (7): 벡터 스칼라 연산*
 
@@ -29,7 +29,7 @@
 **a**+**b** = <1+4, 2+1, 0+3> <br>
 **a**+**b** = <5, 3, 3>
 
-![figure8](img\Figure_(8).png) <br>
+![Figure_(08)](https://github.com/user-attachments/assets/dcb76e82-ac0b-48b2-905c-1c60969e7e52) <br>
 *Figure (8): Vector addition.* <br>
 *그림 (8): 벡터 더하기.*
 
@@ -41,7 +41,7 @@
 
 벡터 덧셈은 두 개 이상의 벡터의 평균 방향을 찾는 데 유용합니다. 이 경우 일반적으로 길이가 같은 벡터를 사용합니다. 다음은 벡터 덧셈 결과에서 길이가 같은 벡터와 길이가 다른 벡터를 사용할 때의 차이를 보여주는 예시입니다:
 
-![figure9](img\Figure_(9).png) <br>
+![Figure_(9)](https://github.com/user-attachments/assets/bf31dbcd-8245-4ff4-a76b-4e509f1cf8bc) <br>
 *Figure (9): Adding various length vectors (left). Adding same length vectors (right) to get the average direction.* <br>
 *그림 (9): 다양한 길이 벡터 추가하기(왼쪽). 동일한 길이의 벡터를 추가하여 평균 방향을 구하기(오른쪽).*
 
@@ -67,7 +67,7 @@ a에서 b를 빼면 다른 결과가 나옵니다:
 
 벡터 **b** - **a**는 벡터 **a** - **b**와 길이가 같지만 반대 방향이라는 점에 유의하세요.
 
-![figure10](img\Figure_(10).png) <br>
+![Figure_(10)](https://github.com/user-attachments/assets/f3882fbf-8d23-4c39-93ac-0332700102d4) <br>
 *Figure (10): Vector subtraction.* <br>
 *그림 (10): 벡터 빼기.*
 
@@ -81,7 +81,7 @@ a에서 b를 빼면 다른 결과가 나옵니다:
 에서 위치 벡터 **a**의 끝점까지 가는 벡터를 찾아야 하는 경우 그림 (11)과 같이 벡터 빼기(**a-b**)
 를 사용합니다.
 
-![figure11](img\Figure_(11).png) <br>
+![Figure_(11)](https://github.com/user-attachments/assets/9675039f-2421-421a-8f6d-c0753d2749b6) <br>
 *Figure (11): Use vector subtraction to find a vector between two points.* <br>
 *그림 (11): 벡터 뺄셈을 사용하여 두 점 사이의 벡터를 찾습니다.**
 
@@ -127,7 +127,7 @@ a에서 b를 빼면 다른 결과가 나옵니다:
 두 벡터 사이의 도트 곱은 두 벡터가 같은 일반적인 방향을 향할 때 항상 양수를 얻습니다. <br>
 두 벡터 사이의 점 곱이 음수이면 두 벡터가 일반적인 방향이 반대라는 뜻입니다.
 
-![figure12](img\Figure_(12).png) <br>
+![Figure_(12)](https://github.com/user-attachments/assets/03ead55c-501f-4c46-bf73-8bc893df179e) <br>
 *Figure (12): When the two vectors go in the same direction (left), the result is a positive dot product. <br>
 When the two vectors go in the opposite direction (right), the result is a negative dot product.*
 *그림 (12): 두 벡터가 같은 방향(왼쪽)으로 이동하면 결과는 양의 점 곱이 됩니다. 두 벡터가 반대 방향(오른쪽)으로 이동하면 결과는 음의 점 곱이 됩니다.*
@@ -190,7 +190,7 @@ unit( **b** ) = <1, 0, 0> <br>
 **a** · unit( **b** ) = (5 * 1) + (2 * 0) + (0 * 0) <br>
 **a** · unit( **b** ) = 2(**a** 를 **b** 에 투영한 길이와 같음)
 
-![figure13](img\Figure_(13).png) <br>
+![Figure_(13)](https://github.com/user-attachments/assets/75bc297c-76dd-4ae4-957e-7fa84a4aefd2) <br>
 *Figure (13): The dot product equals the projection length of one vector onto a non-zero unit vector.* <br>
 *그림 (13): 도트 곱은 0이 아닌 단위 벡터에 대한 한 벡터의 투영 길이와 같습니다.*
 
@@ -222,7 +222,7 @@ pL = **a** · unit( **b** )
 
 교차 곱은 두 벡터를 취하여 두 벡터에 직교하는 세 번째 벡터를 생성합니다.
 
-![figure14](img\Figure_(14).png) <br>
+![Figure_(14)](https://github.com/user-attachments/assets/cfce9c58-894d-44f2-92c5-744f3e5dd190) <br>
 *Figure (14): Calculating the cross product of two vectors.* <br>
 *그림 (14): 두 벡터의 교차 곱 계산하기.*
 
@@ -241,7 +241,7 @@ pL = **a** · unit( **b** )
 **j** = <0,1, 0> <br>
 **k** = <0, 0, 1>
 
-![figure0](img\Figure_(0).png) <br>
+![Figure_(0)](https://github.com/user-attachments/assets/4b4cdd7a-639b-48f5-9b0f-c14e16eacfe9)
 
 위의 다이어그램을 사용하여 두 벡터 **a**<a1, a2, a3>와 **b**<b1, b2, b3>의 교차 곱은 다음과 같이 계산할 수 있습니다:
 
@@ -269,7 +269,7 @@ pL = **a** · unit( **b** )
 
 Rhino의 오른손잡이 시스템에서는 오른손잡이 규칙(**a** = 검지, **b** = 중지, **a** × **b** = 엄지)에 따라 **a** × **b** 의 방향이 정해집니다.
 
-![figure01](img\Figure_(01).png)
+![Figure_(01)](https://github.com/user-attachments/assets/80228478-0206-478e-8e1f-a1a704d55d2c)
 
 일반적으로 3D 벡터 **a** 와 **b** 쌍의 경우:
 
