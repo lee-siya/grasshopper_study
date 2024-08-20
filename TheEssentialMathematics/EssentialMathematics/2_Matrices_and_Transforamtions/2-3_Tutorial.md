@@ -13,13 +13,13 @@
 
 1. 변환할 개체
 2. 회전 각도(45도) 및 배율(0.2). <br>
-![figure048](img\Figure_(048).png)
+![Figure_(048)](https://github.com/user-attachments/assets/2ab62519-3f10-4029-892f-9781ee57fbbd)
 
 **Additional input:**
 
 초기 이동에는 다음이 필요합니다:
 + 입력의 바운딩 박스 중심에서 원점까지의 벡터입니다. <br>
-![figure049](img\Figure_(049).png)
+![Figure_(049)](https://github.com/user-attachments/assets/5f3ba557-5ba6-4e9d-a69a-9baf8be6e8dd)
 
 **Solution:**
 
@@ -27,15 +27,15 @@
 2. 마지막 행렬에서 첫 번째 행렬을 곱하여 마스터 변환 행렬을 생성합니다.
 3. 마스터 변환 행렬을 사용하여 입력을 변환합니다.
 
-![figure050](img\Figure_(050).png)
+![Figure_(050)](https://github.com/user-attachments/assets/e517e096-441d-4a98-83bc-ef75ac1caff3)
 
 위의 단계는 스크립팅을 사용하여 해결할 수도 있습니다.
 
 **Using the Grasshopper VB component:** <br>
-![figure051](img\Figure_(051).png)
+![Figure_(051)](https://github.com/user-attachments/assets/76e174d8-fef9-4407-9286-51534362740b)
 
 **Using the Grasshopper C# component:** <br>
-![figure052](img\Figure_(052).png)
+![Figure_(052)](https://github.com/user-attachments/assets/702c17be-6b9a-4e02-884c-9910f5a9ad88)
 
 **Using the Grasshopper Python component and the RhinoCommon SDK:** <br>
-![figure053](img\Figure_(053).png)
+![Figure_(053)](https://github.com/user-attachments/assets/548e0090-0dd9-4c91-826f-fab6bc762bac)
