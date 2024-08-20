@@ -6,7 +6,7 @@
 [ 4x4 ] 행렬은 모든 변환을 나타낼 수 있습니다.<br>
 모든 변환에 대해 통일된 행렬 차원을 사용하면 계산 시간을 절약할 수 있습니다.
 
-![figure033](img\Figure_(033).png)
+![Figure_(033)](https://github.com/user-attachments/assets/d39e5609-b59e-457a-9668-75ada3c261d7)
 
 <br>
 
@@ -20,7 +20,7 @@
 
 행렬 곱셈은 지오메트리에 변환을 적용하는 데 사용됩니다. 예를 들어 어떤 점을 축을 중심으로 회전하려는 경우 회전 행렬을 사용하고 여기에 점을 곱하여 새로운 회전 위치를 얻습니다.
 
-![figure034](img\Figure_(034).png)
+![Figure_(034)](https://github.com/user-attachments/assets/171ba6ac-b921-42a3-9797-4254e1660f39)
 
 대부분의 경우 동일한 지오메트리에 대해 여러 변환을 수행해야 합니다. 예를 들어 천 개의 점을 이동하고 회전해야 하는 경우 다음 방법 중 하나를 사용할 수 있습니다.
 
@@ -44,15 +44,15 @@
 결과 행렬은 첫 번째 행렬의 행 수와 두 번째 행렬의 열 수와 같은 크기를 갖습니다. 
 예를 들어 차원이 각각 [4x4] 및 [4x1]인 두 행렬 **M** 과 **P** 가 있는 경우 다음 그림과 같이 결과 곱셈 행렬 **M** · **P** 의 차원은 [4x1]입니다:
 
-![figure035](img\Figure_(035).png)
+![Figure_(035)](https://github.com/user-attachments/assets/4b848b49-fb45-4b7e-9a33-004b0e6b071c)
 
 ### Identity matrix / ID 매트릭스
 
 *identity matrix* 는 모든 대각선 성분이 1이 되고 나머지는 0이 되는 특수 행렬입니다.
 
-![figure036](img\Figure_(036).png)
+![Figure_(036)](https://github.com/user-attachments/assets/c5f87b68-5ae4-4d24-b33b-3d0240776454)
 
 아이덴티티 행렬의 주요 특성은 다른 행렬을 곱해도 0을 곱한 값은 변하지 않는다는 것입
 니다.
 
-![figure037](img\Figure_(037).png)
+![Figure_(037)](https://github.com/user-attachments/assets/b70b2740-4791-406f-843c-2990558e42e1)
