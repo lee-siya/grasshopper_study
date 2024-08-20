@@ -3,7 +3,7 @@
 서페이스의 경우, 법선 곡률은 서페이스에 대한 곡률을 일반화한 것입니다. 서페이스의 한 점과 그 지점에서 서페이스의 접하는 평면에 놓인 방향이 주어지면, 법선 단면 곡률은 서페이스와 그 점이 가로지르는 평면, 그 지점에서 서페이스의 법선 및 방향을 교차하여 계산됩니다. 법선 단면 곡률은 관심 지점에서 이 커브의 부호화된 곡률입니다.
 우리 지점에서 표면에 대한 접하는 평면의 모든 방향을 보고 이 모든 방향에서 법선 곡률을 계산하면 최대값과 최소값이 생깁니다.
 
-![figure60](img\Figure_(60).png) <br>
+![Figure_(60)](https://github.com/user-attachments/assets/216e7714-c641-4b0f-9ef6-edc5d42b9ad1) <br>
 *Figure (60): Normal curvatures.* <br>
 *그림 (60): 일반 곡률.*
 
@@ -17,7 +17,7 @@
 
 예를 들어 원통형 표면에서는 선형 방향을 따라 구부러지지 않고(곡률은 0), 끝면과 평행한 평면과 교차할 때(곡률은 1/반경) 최대로 구부러집니다. 이 두 가지 극단이 해당 표면의 주요 곡률을 만듭니다.
 
-![figure61](img\Figure_(61).png) <br>
+![Figure_(61)](https://github.com/user-attachments/assets/eb830e5e-d756-4754-bdcf-64dc49a86f55) <br>
 *Figure (61): Principal curvatures at a surface point are the minimum and maximum  urvatures at that point.* <br>
 *그림 (61): 표면점의 주요 곡률은 해당 지점에서의 최소 및 최대 곡률입니다.*
 
@@ -29,13 +29,13 @@
 
 한 점에서 표면의 가우스 곡률은 해당 지점에서의 주요 곡률의 곱입니다. 양의 가우스 곡률을 가진 점의 접선은 한 점에서 곡면에 국부적으로 닿는 반면, 음의 가우스 곡률을 가진 점의 접선은 곡면을 절단합니다.
 
-![figure068](img\Figure_(068).png)
+![Figure_(068)](https://github.com/user-attachments/assets/4aa74587-73f4-4300-910e-1fe7615f4005)
 
 A: 표면이 그릇 모양인 경우 양의 곡률. <br>
 B: 표면이 안장 모양인 경우 음의 곡률입니다. <br>
 C: 표면이 적어도 한 방향(평면, 원통형)으로 평평한 경우 곡률이 0입니다.
 
-![figure62](img\Figure_(62).png) <br>
+![Figure_(62)](https://github.com/user-attachments/assets/1f8738c1-c72f-4e58-8d53-f8d8c4d518d8) <br>
 *Figure (62): Analyzing the surface Gaussian curvature.* <br>
 *그림 (62): 표면 가우스 곡률 분석하기.*
 
