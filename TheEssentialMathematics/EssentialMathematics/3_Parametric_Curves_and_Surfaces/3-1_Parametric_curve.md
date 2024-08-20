@@ -10,7 +10,7 @@ x = x(*t*) <br>
 y = y(*t*) <br>
 z = z(*t*)
 
-![figure054](img\Figure_(054).png)
+![Figure_(054)](https://github.com/user-attachments/assets/78b9704b-33bd-4e8f-90c0-33c15729aae0)
 
 여기서: <br>
 *t* 는 실수 범위입니다.
@@ -30,7 +30,7 @@ a, b, c는 선의 기울기를 정의하여 벡터 **v** <a, b, c>가 선과 평
 따라서 두 개의 실수 값 *t0*, *t1* 과 선의 방향에 있는 단위 벡터 **v** 사이의 범위인 *t* 매개변수를 사용하여 선분의 파라메트릭 방정식을 다음과 같이 작성할 수 있습니다:
 
 P = P' + *t* * **v** <br>
-![figure055](img\Figure_(055).png)
+![Figure_(055)](https://github.com/user-attachments/assets/d4a4844a-3a91-413e-8381-c0e4ca4798f3)
 
 또 다른 예는 원입니다. 원점(0,0)이 중심이고 각도 매개변수 *t* 가 0에서 2π 라디안 사이인 xy 평면상의 원의 파라메트릭 방정식은 다음과 같습니다:
 
@@ -49,4 +49,4 @@ Then: <br>
 ( x/r )<sup>2</sup> + ( y/r )<sup>2</sup> = 1, or <br>
 x<sup>2</sup> + y<sup>2</sup> = r<sup>2</sup>
 
-![figure056](img\Figure_(056).png)
+![Figure_(056)](https://github.com/user-attachments/assets/3bc56248-b5c8-4790-9e34-7cebbb85ea11)
