@@ -19,10 +19,8 @@
 
 그 벡터를 표현하기 위해서는 좌표계에 앵커 포인트가 필요합니다. 예를 들어, 다음 그림의 화살표들은 모두 다른 위치에 앵커 포인트가 있음에도 불구하고 같은 벡터를 동등하게 표현한 것입니다.
 
-![figure1](img\Figure_(1).png)
-
-*Figure (1): Vector representation in the 3-D coordinate system.*
-
+![Figure_(1)](https://github.com/user-attachments/assets/97493cc6-cc38-4abd-a0cc-3c5b1e5cfb76) <br>
+*Figure (1): Vector representation in the 3-D coordinate system.* <br>
 *그림 (1): 3차원 좌표계에서의 벡터 표현.*
 
 3차원 벡터 ***v*** = <a1, a2, a3> 가 주어지면, 모든 벡터 성분 a1, a2, a3 는 실수입니다. 또한 점 A(x,y,z)에서 점 B(x+a1, y+a2, z+a3)까지의 모든 선분은 벡터 ***v***의 동등한 표현입니다.
@@ -38,10 +36,8 @@ B = A + **v**
 B = (1+5, 2+6, 3+7)
 B = (6, 8, 10)
 
-![figure2](img\Figure_(2).png)
-
-*Figure (2): The relationship between a vector, the vector anchor point, and the point coinciding with the vector tip location.*
-
+![Figure_(2)](https://github.com/user-attachments/assets/2db131d8-cd6b-45f3-965f-17f60a396ccc) <br>
+*Figure (2): The relationship between a vector, the vector anchor point, and the point coinciding with the vector tip location.* <br>
 *그림 (2): 벡터, 벡터 앵커 포인트, 벡터 팁 위치와 일치하는 포인트 사이의 관계.*
 
 <br>
@@ -54,9 +50,8 @@ B = (6, 8, 10)
 원점 = (0,0,0)
 B = (a1, a2, a3)
 
-![figure3](img\Figure_(3).png)
-
-*Figure (3): Position vector. The tip point coordinates equal the corresponding vector components.*
+![Figure_(3)](https://github.com/user-attachments/assets/a2098212-4300-4df8-8238-2fdbb7f452be) <br>
+*Figure (3): Position vector. The tip point coordinates equal the corresponding vector components.* <br>
 *그림 (3): 위치 벡터. 끝점 좌표는 해당 벡터의 구성요소와 같습니다.*
 
 주어진 벡터 **v** = < a1,a2,a3 >에 대한 위치 벡터는 원점(0, 0, 0)에서 점 (a1, a2, a3)까지의 특수 선분 표현입니다.
@@ -76,10 +71,8 @@ B = (a1, a2, a3)
 
 다음과 같이 벡터와 점을 그릴 수 있습니다:
 
-![figure4](img\Figure_(4).png)
-
-*Figure (4): A vector defines a direction and length. A point defines a location.*
-
+![Figure_(4)](https://github.com/user-attachments/assets/6a2c8a6a-25a5-4bce-982d-23d8c1feac13) <br>
+*Figure (4): A vector defines a direction and length. A point defines a location.* <br>
 *그림 (4): 벡터는 방향과 길이를 정의합니다. 점은 위치를 정의합니다.*
 
 <br>
@@ -98,10 +91,8 @@ B = (a1, a2, a3)
 
     |a| = √(a1^2 + a2^2 + a3)^2
 
-![figure5](img\Figure_(5).png)
-
-*Figure (5): Vector length.*
-
+![Figure_(5)](https://github.com/user-attachments/assets/1c5a4d5f-df9f-47e5-8d02-08851ed33724) <br>
+*Figure (5): Vector length.* <br>
 *그림 (5): 벡터 길이.*
 
 <br>
@@ -126,7 +117,7 @@ B = (a1, a2, a3)
     a = <1, a2, a3>
     a의 단위 벡터 = <a1/|a|, a2/|a|, a3/|a|>입니다.
 
-![figure6](img\Figure_(6).png) <br>
+![Figure_(6)](https://github.com/user-attachments/assets/eae991c7-6737-4dcb-acaf-d4d3b04ed07d) <br>
 *Figure (6): Unit vector equals one-unit length of the vector.* <br>
 *그림 (6): 단위 벡터는 벡터의 한 단위 길이와 같습니다.*
 
