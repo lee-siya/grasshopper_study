@@ -263,7 +263,7 @@ pL = **a** · unit( **b** )
 **a** × **b** = <0, 0, 1> <br>
 **b** × **a** = <0, 0, -1>
 
-![figure15](img\Figure_(15).png) <br>
+![Figure_(15)](https://github.com/user-attachments/assets/cab490e5-5b23-4e04-9088-efb10653a486) <br>
 *Figure (15): The relationship between the sine of the angle between two vectors and the length of their cross product vector.*
 *그림 (15): 두 벡터 사이의 각도의 사인과 교차 곱 벡터의 길이 사이의 관계.*
 
