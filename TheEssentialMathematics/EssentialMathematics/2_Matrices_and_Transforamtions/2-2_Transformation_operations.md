@@ -50,7 +50,7 @@ P’ = P + **v** = ( 2+2, 3+2, 1+2 ) = ( 4, 5, 3 )
 x, y 평면 P( x, y ) 의 한 점을 각도( b )만큼 회전시킵니다. <br>
 그림에서 다음과 같이 말할 수 있습니다:
 
-# Figure 누락됨
+![Figure_000](https://github.com/user-attachments/assets/4fe25a9b-2625-4e9e-ac31-be8cd054c3fb)
 
 x = d cos(a) ---(1) <br>
 y = d sin(a) ---(2) <br>
