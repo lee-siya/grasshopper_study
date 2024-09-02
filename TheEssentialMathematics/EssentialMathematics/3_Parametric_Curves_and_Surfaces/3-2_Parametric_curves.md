@@ -6,7 +6,7 @@
 
 두 점 A 와 B 사이에 직선 경로(선분)가 있고 **v** 가 A 에서 B 까지의 벡터(**v** = B - A)라면 파라메트릭 선 방정식을 사용하여 다음과 같이 A 와 B 사이의 모든 점 M을 구할 수 있습니다:
 
-M = A + *t* *(B-A) <br>
+M = A + *t* *( B - A ) <br>
 Where: <br>
 *t* 는 0과 1 사이의 값입니다.
 
@@ -26,9 +26,9 @@ Where: <br>
 <br>
 <br>
 
-### Curve domain or interval / 커브 도메인 또는 간격
+### Curve domain or interval / 커브 도메인 또는 간격(구간)
 
-커브 영역 또는 구간은 해당 커브 내의 한 점으로 평가되는 매개변수의 범위로 정의됩니다. 도메인은 일반적으로 (최소에서 최대) 또는 (최소, 최대) 형식으로 표현되는 도메인 한계를 정의하는 두 개의 실 수 로 설명됩니다. 도메인 한계는 커브의 실제 길이와 관련이 있을 수도 있고 없을 수도 있는 두 값일 수 있습니다. 증가하는 도메인에서 도메인 최소 매개변수는 커브의 시작점으로 평가되고 도메인 최대 매개변수는 커브 의 끝점으로 평가됩니다.
+커브 도메인 또는 구간은 해당 커브 내의 한 점으로 평가되는 매개변수의 범위로 정의됩니다. 도메인은 일반적으로 (min to max) 또는 (min, max) 형식으로 표현되는 도메인 한계를 정의하는 두 개의 실수로 설명됩니다. 도메인 한계는 커브의 실제 길이와 관련이 있을 수도 있고 없을 수도 있는 두 값일 수 있습니다. 증가하는 도메인에서 도메인 최소 매개변수는 커브의 시작점으로 평가되고 도메인 최대 매개변수는 커브 의 끝점으로 평가됩니다.
 
 ![Figure_(27)](https://github.com/user-attachments/assets/729785fa-d914-4def-a135-bfc24b7df3b5) <br>
 *Figure (27): Curve domain or interval is a set of two numbers that is usually ascending. When possible, domain length is set to be close to the 3d curve length, but it can be set to any length without changing the 3d curve.* <br>
@@ -47,7 +47,7 @@ Where: <br>
 <br>
 <br>
 
-### Curve evaluation / 곡선 평가
+### Curve evaluation
 
 커브 간격은 3D 커브 내의 점으로 평가되는 모든 파라미터 값의 범위라는 것을 배웠습니다. 그러나 예를 들어 도메인의 중간에서 평가한다고 해서 곡선의 중앙에 있는 점이 나온다는 보장은 없습니다.
 
@@ -83,13 +83,13 @@ Where: <br>
 
 ### Cubic polynomial curves / 큐빅 다항식 커브
 
-Hermite<sup>2</sup> 과 Bézier<sup>3</sup> 은 네 개의 파라미터에 의해 결정되는 입방 다항식 곡선의 두 가지 예입니다. Hermite curves 은 두 개의 끝점과 이 지점에서 두 개의 접선 벡터에 의해 결정되는 반면, 베지어 곡선은 네 개의 점으로 정의됩니다. 이 두 곡선은 수학적으로 다르지만 비슷한 특징과 한계를 공유합니다.
+Hermite² 과 Bézier³ 은 네 개의 파라미터에 의해 결정되는 입방 다항식 곡선(cubic polynomial curves)의 두 가지 예입니다. Hermite curves 은 두 개의 끝점과 이 지점에서 두 개의 접선 벡터에 의해 결정되는 반면, 베지어 곡선은 네 개의 점으로 정의됩니다. 이 두 곡선은 수학적으로 다르지만 비슷한 특징과 한계를 공유합니다.
 
 ![Figure_(32)](https://github.com/user-attachments/assets/a5aac9fe-cb01-44b9-aa60-bbb24dfe1dba) <br>
 *Figure (32): Cubic polynomial curves. The Bézier curve (left) is defined by four points. The Hermite curve (right) is defined by two points and two tangents.* <br>
 *그림 (32): 3차 다항식 곡선. 베지어 곡선(왼쪽)은 4개의 점으로 정의됩니다. 에르미트 곡선(오른쪽)은 두 점과 두 접선으로 정의됩니다.*
 
-대부분의 경우 커브는 여러 세그먼트로 만들어집니다. 이를 위해서는 piecewise cubic curve 라고 하는 것을 만들어야 합니다. 다음은 7개의 저장점을 사용하여 두 개의 세그먼트 큐빅 커브를 만드는 piecewise Bézier curve 의 그림입니다. 최종 커브가 합쳐지긴 했지만 부드럽거나 연속적으로 보이지 않습니다.
+대부분의 경우 커브는 여러 segments로 만들어집니다. 이를 위해서는 *piecewise cubic curve* 라고 하는 것을 만들어야 합니다. 다음은 7개의 저장점(storage point)을 사용하여 두 개의 segment cubic curve를 만드는 piecewise Bézier curve 의 그림입니다. 최종 커브가 합쳐지긴 했지만 부드럽거나 연속적으로 보이지 않습니다.
 
 ![Figure_(33)](https://github.com/user-attachments/assets/d762fe0f-c53b-467b-9934-0155179d7836) <br>
 *Figure (33): Two Bezier spans share one point.* <br>
@@ -101,11 +101,11 @@ Hermite curves 는 베지어 커브와 동일한 수의 파라미터를 사용�
 *Figure (34): Two Hermite spans share one point and a tangent.* <br>
 *그림 (34): 두 개의 허마이트 스팬은 하나의 점과 접선을 공유합니다.*
 
-The non-uniform rational B-spline<sup>4</sup> (비균일 이성 B-스플라인) (NURBS)은 더욱 매끄럽고 연속적인 커브를 유지하는 강력한 커브 표현입니다. 세그먼트는 더 많은 제어점을 공유하여 더 적은 저장 공간으로 더욱 부드러운 커브를 구현합니다.
+The non-uniform rational B-spline⁴ (비균일 이성 B-스플라인) (NURBS)은 더욱 매끄럽고 연속적인 커브를 유지하는 강력한 커브 표현입니다. 세그먼트는 더 많은 제어점을 공유하여 더 적은 저장 공간으로 더욱 부드러운 커브를 구현합니다.
 
 ![Figure_(35)](https://github.com/user-attachments/assets/27851a45-3ba5-439f-9dfe-2f18bcfbf168) <br>
 *Figure (35): Two degree-3 NURBS spans share three control points.* <br>
-*그림 (35): 두 개의 3도 NURBS 스팬은 세 개의 제어점을 공유합니다.*
+*그림 (35): 두 개의 degree-3 NURBS 스팬은 세 개의 제어점을 공유합니다.*
 
 NURBS 커브와 서페이스는 지오메트리를 표현하기 위해 Rhino에서 사용하는 주요 수학적 표현입니다. 이 장의 뒷부분에서 NURBS 커브의 특성과 구성 요소에 대해 자세히 설명합니다.
 
@@ -115,7 +115,7 @@ NURBS 커브와 서페이스는 지오메트리를 표현하기 위해 Rhino에�
 
 ### Evaluating cubic Bézier curves / 큐빅 베지어 곡선 평가하기
 
-발명자인 폴 드 카스텔조(Paul de Casteljau)의 이름을 딴 드 카스텔조 알고리즘(5 )은 재귀적 방법을 사용하여 베지어 곡선을 평가합니다. 알고리즘 단계는 다음과 같이 요약할 수 있습니다:
+발명자인 폴 드 카스텔조(Paul de Casteljau)의 이름을 딴 de Casteljau algorithm⁵은 재귀적 방법을 사용하여 베지어 곡선을 평가합니다. 알고리즘 단계는 다음과 같이 요약할 수 있습니다:
 
 **Input:** <br>
 커브 도메인 내의 파라미터인 네 점 A, B, C, D는 커브 *t* 를 정의합니다. <br>
@@ -130,3 +130,11 @@ NURBS 커브와 서페이스는 지오메트리를 표현하기 위해 Rhino에�
 6. PQ 라인의 매개변수 *t* 에서 점 R 을 찾습니다.
 
 ![Figure_(057)](https://github.com/user-attachments/assets/bfc628d1-5717-43b1-82e1-cb503885c347)
+
+<br>
+
+---
+² [Wikipedia: Non-uniform rational B-spline](https://en.wikipedia.org/wiki/Non-uniform_rational_B-spline) <br>
+³ [Wikipedia; De Casteljau's algorithm](https://en.wikipedia.org/wiki/De_Casteljau%27s_algorithm) <br>
+⁴ [Wikipedia: NURBS](https://en.wikipedia.org/wiki/Non-uniform_rational_B-spline)
+⁵ [5 Wikipedia: De Boor's algorithm](https://en.wikipedia.org/wiki/De_Boor's_algorithm)

@@ -1,4 +1,4 @@
-## NURBS curves / NURBS 커브
+## NURBS curves
 
 NURBS는 커브를 정확하게 수학적으로 표현한 것으로 매우 직관적으로 편집할 수 있습니다. NURBS를 사용하면 자유형 곡선을 쉽게 표현할 수 있으며 제어 구조를 통해 쉽고 예측 가능한 편집이 가능합니다.
 
@@ -14,9 +14,9 @@ NURBS에 대해 자세히 알아보고 싶은 분들을 위해 많은 책과 참
 커브 차수는 전체 양수입니다. Rhino에서는 1부터 시작하는 모든 차수의 커브로 작업할 수 있습니다. 1, 2, 3, 5 차수가 가장 유용하지만, 4와 5 이상의 차수는 현실에서 많이 사용되지 않습니다. 다음은 커브와 그 차수의 몇 가지 예입니다:
 
 ![Figure_(058)](https://github.com/user-attachments/assets/62e2db49-0fe4-430f-baac-45cae6e5ff51)
-+ 선( **Lines** )과 폴리라인( **polylines** )은 1도 NURBS 커브입니다.
-+ 원과 타원은 2도 NURBS 커브의 예입니다.
-+ 자유형 커브는 일반적으로 차수 3 또는 5 NURBS 커브로 표현됩니다.
++ 선( **Lines** )과 폴리라인( **polylines** )은 degree-1 NURBS 커브입니다.
++ 원과 타원은 degree-2 NURBS 커브의 예입니다.
++ 자유형 커브는 일반적으로 degree-3 또는 5 NURBS 커브로 표현됩니다.
 
 <br>
 <br>
@@ -24,20 +24,17 @@ NURBS에 대해 자세히 알아보고 싶은 분들을 위해 많은 책과 참
 
 ### Control points / 제어 포인트
 
-NURBS 커브의 제어점은 최소 (차수+1) 점의 목록입니다. NURBS 커브의 모양을 변경하는 가장 직관적인 방법은 제어점을 이동하는 것입니다.
-NURBS 커브의 각 스팬( span )에 영향을 주는 제어점의 수는 커브의 차수에 따라 정의됩니다. 예를 들어 차수 1 커브의 각 스팬은 두 개의 끝 제어점만 영향을 받습니다. 차수 2 커브에서는 세 개의 제어점이 각 스팬에 영향을 줍니다.
+NURBS 커브의 제어점은 최소 ( degree+1 ) 점의 목록입니다. NURBS 커브의 모양을 변경하는 가장 직관적인 방법은 제어점을 이동하는 것입니다.
+NURBS 커브의 각 스팬( span )에 영향을 주는 제어점의 수는 커브의 차수에 따라 정의됩니다. 예를 들어 degree-1 커브의 각 스팬은 두 개의 끝 제어점만 영향을 받습니다. degree-2 커브에서는 세 개의 제어점이 각 스팬에 영향을 줍니다.
 
 ![Figure_(059)](https://github.com/user-attachments/assets/17a77cf5-6fd3-4dae-ad5f-698613ac13b4) <br>
-차수 1 커브의 제어점은 모든 커브 제어점을 통과합니다. 차수 1 NURBS 커브에서는 두 개의 (차수+1) 제어점이 각 스팬을 정의합니
-다. 5개의 제어점을 사용하면 커브의 스팬은 4개가 됩니다.
+degree-1 커브의 제어점은 모든 커브 제어점을 통과합니다. degree-1 NURBS 커브에서는 두 개의 (degree+1) 제어점이 각 스팬을 정의합니다. 5개의 제어점을 사용하면 커브의 스팬은 4개가 됩니다.
 
 ![Figure_(060)](https://github.com/user-attachments/assets/3c5c0247-510c-46a4-bfbc-11a424edd2b1) <br>
-원과 타원은 차수 2 커브의 예입니다. 차수 2 NURBS 커브에서는 3개의 (차수+1) 제어점이 각 스팬을 정의합니다. 5개의 제어점 사
-용점으로 설정하면 커브는 세 개의 스팬을 갖습니다.
+원과 타원은 degree-2 커브의 예입니다. degree-2 NURBS 커브에서는 3개의 (차수+1) 제어점이 각 스팬을 정의합니다. 5개의 제어점 사용점으로 설정하면 커브는 세 개의 스팬을 갖습니다.
 
 ![Figure_(061)](https://github.com/user-attachments/assets/50c6e993-b471-4d50-98f1-35e0427c9d1a) <br>
-차수3 커브의 제어점은 일반적으로 열린 커브의 끝점을 제외하고는 커브에 닿지 않습니다. 차수3 NURBS 커브에서는 4개의 (차수
-+1) 제어점이 각 스팬을 정의합니다. 5개의 제어점을 사용하는 커브에는 두 개의 스팬이 있습니다.
+degree-3 커브의 제어점은 일반적으로 열린 커브의 끝점을 제외하고는 커브에 닿지 않습니다. degree-3 NURBS 커브에서는 4개의 ( degree+1 ) 제어점이 각 스팬을 정의합니다. 5개의 제어점을 사용하는 커브에는 두 개의 스팬이 있습니다.
 
 <br>
 <br>
@@ -45,7 +42,7 @@ NURBS 커브의 각 스팬( span )에 영향을 주는 제어점의 수는 커�
 
 ### Weights of control points / 컨트롤 포인트의 가중치
 
-각 제어점에는 가중치라는 관련 숫자가 있습니다. 몇 가지 예외를 제외하고 가중치는 양수입니다. 모든 제어점의 가중치가 같은 경우, 보통 1이면 비합리 곡선이라고 합니다. 직관적으로 가중치는 각 제어점이 가진 중력의 양으로 생각할 수 있습니다. 제어점의 상대적 가중치가 높을수록 커브는 해당 제어점을 향해 더 가깝게 당겨집니다.
+각 제어점에는 가중치라는 관련 숫자가 있습니다. 몇 가지 예외를 제외하고 가중치는 양수입니다. 모든 제어점의 가중치가 같은 경우, 보통 1이면 non-rational 곡선이라고 합니다. 직관적으로 가중치는 각 제어점이 가진 중력의 양으로 생각할 수 있습니다. 제어점의 상대적 가중치가 높을수록 커브는 해당 제어점을 향해 더 가깝게 당겨집니다.
 
 커브 가중치를 변경하지 않는 것이 가장 좋습니다. 가중치를 변경하면 원하는 결과를 얻을 수 있는 경우는 드물고 교차점과 같은 연산에서 많은 계산 문제가 발생합니다. 합리적인 커브를 사용하는 유일한 좋은 이유는 원이나 타원과 같이 다른 방법으로는
 그릴 수 없는 커브를 표현하기 위해서입니다.
@@ -64,7 +61,7 @@ The circle on the right is a rational curve with corner control points having we
 
 ### Knots / 매듭점
 
-각 NURBS 커브에는 매듭점(매듭점 벡터라고도 함)이라는 연결된 숫자 목록이 있습니다. 매듭점은 이해하고 설정하기가 조금 더 어렵습니다. 3D 모델러를 사용하는 동안 생성하는 각 커브의 매듭점을 수동으로 설정할 필요는 없지만, 매듭점에 대해 알아두면 도움이 될 몇 가지 사항이 있습니다.
+각 NURBS 커브에는 매듭점( knot vector 라고도 함 )이라는 연결된 숫자 목록이 있습니다. 매듭점은 이해하고 설정하기가 조금 더 어렵습니다. 3D 모델러를 사용하는 동안 생성하는 각 커브의 매듭점을 수동으로 설정할 필요는 없지만, 매듭점에 대해 알아두면 도움이 될 몇 가지 사항이 있습니다.
 
 ### Knots are parameter values / 매듭은 매개변수 값입니다
 
@@ -99,10 +96,9 @@ The circle on the right is a rational curve with corner control points having we
 
 완전 다중 매듭점은 커브 차수와 같은 다중성을 갖습니다. 완전 다중 매듭점에는 해당 제어점이 있으며 커브는 이 점을 통과합니다.
 
-예를 들어, clamped or open curves 에는 커브 끝에 최대 다중성을 가진 매듭점이 있습니다. 이것이 바로 끝 제어점이 커브 끝점과 일치하는 이유입니다. <br>
-내부에 완전히 여러 개의 매듭을 사용하면 해당 지점에서 커브가 꼬일 수 있습니다.
+예를 들어, clamped or open curves 에는 커브 끝에 최대 다중성을 가진 매듭점이 있습니다. 이것이 바로 끝 제어점이 커브 끝점과 일치하는 이유입니다. 내부에 완전 다중 매듭을 사용하면 해당 지점에서 커브가 꼬일 수 있습니다.
 
-예를 들어, 다음 두 커브는 모두 차수 3이며 제어점의 수와 위치가 동일합니다. 하지만 매듭점이 다르고 모양도 다릅니다. 완전 다중성은 연결된 제어점을 통해 커브를 강제로 통과시킵니다.
+예를 들어, 다음 두 커브는 모두 degree-3이며 제어점의 수와 위치가 동일합니다. 하지만 매듭점이 다르고 모양도 다릅니다. 완전 다중성은 연결된 제어점을 통해 커브를 강제로 통과시킵니다.
 
 
 ![Figure_(40)](https://github.com/user-attachments/assets/7721ceae-33ef-4ebe-9c8f-f00fab97eeeb) <br>
@@ -116,7 +112,7 @@ The circle on the right is a rational curve with corner control points having we
 ### Uniform knots / 균일한 매듭점
 
 열린 커브의 매듭점 목록은 다음 조건을 충족합니다: <br>
-매듭점은 완전 다중 매듭점으로 시작하여 단순 매듭점으로 이어지며, 완전 다중 매듭점으로 끝납니다. 값이 증가하고 간격이 균등합니다. 이는 개방형(클램핑된 ) 커브의 전형적인 모습입니다. 주기적으로 닫힌 커브는 나중에 살펴볼 것처럼 다르게 작동합니다.
+매듭점은 완전 다중 매듭점으로 시작하여 단순 매듭점으로 이어지며, 완전 다중 매듭점으로 끝납니다. 값이 증가하고 간격이 균등합니다. 이는 개방형(클램핑된 ) 커브의 전형적인 모습입니다. 주기적으로 닫힌 커브( Periodic closed curve )는 나중에 살펴볼 것처럼 다르게 작동합니다.
 
 ![Figure_(41)](https://github.com/user-attachments/assets/425a9756-e5b6-47c4-98b4-9110ba7472a5) <br>
 *Figure (41) Uniform knot list means that spacing between knots is constant, with the exception of clamped curves where they can full multiplicity knot at start and end, and still be considered uniform. The left curve is periodic (closed without kink), and the right is clamped (open).* <br>
@@ -134,7 +130,7 @@ NURBS 커브는 매듭점 사이의 간격이 균일하지 않을 수 있습니�
 *Figure (42) Non-uniform knot list can help produce smoother curves. The curve on the left interpolate through points with non-uniform knots, and produces smoother curvature. The curve on the right interpolate through the same points but forces a uniform spacing of knots, resulting curve is not as smooth.* <br>
 *그림 (42) 균일하지 않은 매듭점 목록은 더 부드러운 커브를 생성하는 데 도움이 됩니다. 왼쪽의 커브는 매듭점이 균일하지 않은 점을 보간하여 더 부드러운 곡률을 생성합니다. 오른쪽의 커브는 동일한 점을 보간하지만 매듭점 간격을 균일하게 하여 커브가 부드럽지 않습니다.*
 
-균일하지 않으면서도 합리적인 커브의 예로 NURBS 원을 들 수 있습니다. 다음은 9개의 제어점과 10개의 노트가 있는 차수 2 커브입니다. 영역은 0-4이고 간격은 0과 1 사이를 번갈아 가며 나타납니다.
+균일하지 않으면서도 합리적인 커브의 예로 NURBS 원을 들 수 있습니다. 다음은 9개의 제어점과 10개의 노트가 있는 degree-2 커브입니다. 영역은 0-4이고 간격은 0과 1 사이를 번갈아 가며 나타납니다.
 
 knots = <0,0,1,1,2,2,3,3,4,4> --- (full multiplicity in the interior knots) <br>
 spacing between knots = [0,1,0,1,0,1,0,1,0] --- (non-uniform)
@@ -174,17 +170,18 @@ NURBS 커브를 만들려면 다음 정보를 제공해야 합니다:
 
 ![Figure_(062)](https://github.com/user-attachments/assets/284e3200-99f0-4d4d-95e5-b251d19f2c47)
 
-+ 1도 개방형 커브.
++ Degree-1 open curve <br>
 커브는 모든 제어점을 통과합니다.
-+ 3도 개방형 커브.
++ Degree-3 open curve <br>
 두 커브 끝은 모두 끝 제어점과 일치합니다.
-+ 3도 폐주기 곡선. 커브 심은 제어점을 통과하지 않습니다.
++ Degree-3 closed periodic curve <br>
+커브 심은 제어점을 통과하지 않습니다.
 
 ![Figure_(063)](https://github.com/user-attachments/assets/bee4e0c4-a136-4706-9e97-011bddfa401d)
 
-+ 주기 커브의 제어점을 이동해도 커브 부드러움에는 영향을 주지 않습니다.
++ periodic curve 의 제어점을 이동해도 커브 부드러움에는 영향을 주지 않습니다.
 + 커브가 일부 제어점을 강제로 통과할 때 꼬임이 생깁니다.
-+ 컨트롤 포인트 이동. 비주기적 커브는 커브의 매끄러운 연속성을 보장하지는 않지만 결과를 더 잘 제어할 수 있습니다.
++ non-periodic curve 의 제어점 이동은 커브의 매끄러운 연속성을 보장하지는 않지만 결과를 더 잘 제어할 수 있습니다.
 
 <br>
 <br>
@@ -192,17 +189,17 @@ NURBS 커브를 만들려면 다음 정보를 제공해야 합니다:
 
 ### Clamped vs. periodic NURBS curves / 클램프형과 주기적 NURBS 커브 비교
 
-닫힌 클램프 커브의 끝점은 끝 제어점과 일치합니다. 주기 커브는 부드러운 닫힌 커브입니다. 이 둘의 차이점을 이해하는 가장 좋은 방법은 제어점과 매듭점을 비교하는 것입니다.
+닫힌 클램프 커브의 끝점은 끝 제어점과 일치합니다. periodic curve 는 부드러운 닫힌 커브입니다. 이 둘의 차이점을 이해하는 가장 좋은 방법은 제어점과 매듭점을 비교하는 것입니다.
 
 다음은 개방형, 클램핑된 non-rational NURBS 커브의 예시입니다. 이 커브에는 4개의 제어점이 있고, 시작 매듭점과 끝 매듭점에 최대 다중성을 가진 균일한 매듭점이 있으며 모든 제어점의 가중치는 1입니다.
 
 ![Figure_(45)](https://github.com/user-attachments/assets/36089daf-9a09-4b82-a4d9-b3e8d065d5f5) <br>
 *Figure (45): Analyze degree-3 open non-rational NURBS curve.* <br>
-*그림 (45): 차수 3의 개방형 비차수 NURBS 커브 분석하기*
+*그림 (45): degree-3 의 개방형 비차수 NURBS 커브 분석하기*
 
 <br>
 
-다음 원형 커브는 차수 3의 닫힌 주기적 NURBS 커브의 예입니다. 모든 가중치가 동일하기 때문에 비합리적이기도 합니다. 주기 곡선은 겹치는 제어점이 거의 없이 더 많은 제어점이 필요합니다. 또한 매듭점도 간단합니다.
+다음 원형 커브는 degree-3 의 닫힌 주기적 NURBS 커브의 예입니다. 모든 가중치가 동일하기 때문에 비합리적이기도 합니다. periodic curve 는 겹치는 제어점이 거의 없이 더 많은 제어점이 필요합니다. 또한 매듭점도 간단합니다.
 
 ![Figure_(46)](https://github.com/user-attachments/assets/2d75a270-5175-46e0-b57b-738bdab814bb) <br>
 *Figure (46): Analyze degree-3 closed (periodic) NURBS curve.* <br>
@@ -210,8 +207,7 @@ NURBS 커브를 만들려면 다음 정보를 제공해야 합니다:
 
 <br>
 
-주기 커브는 4개의 입력점을 7개의 제어점(차수+4)으로 바꾼 반면, 클램프 커브는 4개의 제어점만 사용했음을 알 수 있습니다. 주기 커브의 매듭점은 단순 매듭점만 사용하는 반면, 클램프 커브의 시작 및 끝 매듭점은 커브가 시작 및 끝 제어점을 통과하도록
-전체 다중성을 갖습니다.
+주기 커브는 4개의 입력점을 7개의 제어점( degree+4 )으로 바꾼 반면, 클램프 커브는 4개의 제어점만 사용했음을 알 수 있습니다. 주기 커브의 매듭점은 단순 매듭점만 사용하는 반면, 클램프 커브의 시작 및 끝 매듭점은 커브가 시작 및 끝 제어점을 통과하도록 완전 다중성을 갖습니다.
 
 이전 예제의 차수를 3이 아닌 2로 설정하면 매듭점이 작아지고 주기 곡선의 제어점 수가 변경됩니다.
 
@@ -221,7 +217,7 @@ NURBS 커브를 만들려면 다음 정보를 제공해야 합니다:
 
 ![Figure_(48)](https://github.com/user-attachments/assets/7d323136-ecd9-4986-8b8f-f73d2d9d8148) <br>
 *Figure (48): Analyze degree-2 closed (periodic) NURBS curve.* <br>
-*그림 (48): 차수 2 닫힘(주기적) NURBS 커브 분석.*
+*그림 (48): degree-2 닫힘(주기적) NURBS 커브 분석.*
 
 <br>
 <br>
@@ -245,7 +241,7 @@ NURBS 커브를 만들려면 다음 정보를 제공해야 합니다:
 
 ### Evaluating NURBS curves / NURBS 커브 평가
 
-발명자인 칼 드 부어(Carl de Boor)의 이름을 딴 de Boor’s algorithm<sup>7</sup>은 Bézier curves에 대한 de Casteljau algorithm을 일반화한 것입니다. 수치적으로 안정적이며 3D 애플리케이션에서 NURBS 커브의 점을 평가하는 데 널리 사용됩니다. 다음은 드 부어 알고리즘을 사용하여 차수 3 NURBS 커브의 점을 평가하는 예제입니다.<sup>8</sup>
+발명자인 칼 드 부어(Carl de Boor)의 이름을 딴 de Boor’s algorithm<sup>7</sup>은 Bézier curves에 대한 de Casteljau algorithm을 일반화한 것입니다. 수치적으로 안정적이며 3D 애플리케이션에서 NURBS 커브의 점을 평가하는 데 널리 사용됩니다. 다음은 드 부어 알고리즘을 사용하여 degree-3 NURBS 커브의 점을 평가하는 예제입니다.<sup>8</sup>
 
 ![Figure_(064)](https://github.com/user-attachments/assets/3cde4160-f55e-400b-84e3-317b52e7c102) <br>
 **Input:** <br>
@@ -290,3 +286,6 @@ Fc = (u – u<sub>3</sub> )/ (u<sub>3+3-2</sub> – u<sub>3</sub> ) = 0.6 <br>
 Find the point on curve at u=0.4 <br>
 parameter: <br>
 F= 0.4 **D** + 0.6 **E**
+
+
+<sup>6</sup> [Michigan Tech, Department of Computer Science, De Boor's algorithm](https://pages.mtu.edu/%7Eshene/COURSES/cs3621/NOTES/spline/de-Boor.html)
