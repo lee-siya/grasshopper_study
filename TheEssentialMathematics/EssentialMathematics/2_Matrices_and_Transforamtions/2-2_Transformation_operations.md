@@ -1,10 +1,10 @@
-## Transformation operations / 변환 작업
+## Transformation operations / 변환 작업(연산)
 
-대부분의 변형은 지오메트리 부분 간의 평행 관계를 유지합니다. 예를 들어, 선형 점은 변환 후에도 선형 상태로 유지됩니다. 또한 한 평면의 점은 변환 후에도 동일 평면을 유지합니다. 이러한 유형의 변환을 아핀 변환이라고 합니다.
+대부분의 변환은 지오메트리 부분 간의 평행 관계를 유지합니다. 예를 들어, 선형 점은 변환 후에도 선형 상태로 유지됩니다. 또한 한 평면의 점은 변환 후에도 동일 평면을 유지합니다. 이러한 유형의 변환을 *affine transforamtion* 이라고 합니다.
 
 <br>
 
-### Translation (move) transformation / 번역(이동) 변환
+### Translation (move) transformation / Translation(이동) 변환
 
 시작 위치에서 특정 벡터에 따라 점을 이동하는 것은 다음과 같이 계산할 수 있습니다:
 
@@ -17,19 +17,19 @@ P(x, y, z) is a given point <br>
 
 Then:
 
-**P'(x)** = **x + a**
-**P'(y)** = **y + b**
+**P'(x)** = **x + a** <br>
+**P'(y)** = **y + b** <br>
 P'(z) = z + c
 
-포인트는 행렬 형식으로 표시되며, 마지막 행에 1이 삽입된 [4x1] 행렬(마지막 행에 1이 삽입됨)을 사용합니다. 예를 들어 점 P(x, y, z)는 다음과 같이 표현됩니다. 는 다음과 같습니다: <br>
+포인트는 행렬 형식으로 표시되며, 마지막 행에 1이 삽입된 [4x1] 행렬을 사용합니다. 예를 들어 점 P(x, y, z)는 다음과 같이 표현됩니다: <br>
 ![Figure_(038)](https://github.com/user-attachments/assets/53669a0d-8099-41ec-9728-83d0def49f32)
 
-변환에 [3x3] 행렬 대신 [4x4] 행렬(균질 좌표계라고 함)을 사용하면 변환을 포함한 모든 변환을 나타낼 수 있습니다. 변환 행렬의 일반적인 형식은 다음과 같습니다:
+변환에 [3x3] 행렬 대신 [4x4] 행렬(동차 좌표계(*homogenous coordinate system*) 라고 함)을 사용하면 변환(translation)을 포함한 모든 변환(transformations)을 나타낼 수 있습니다. 변환 행렬의 일반적인 형식은 다음과 같습니다:
 
 ![Figure_(039)](https://github.com/user-attachments/assets/45848a1e-92fe-4f5a-92dc-052126b8d98e)
 
-예를 들어, 점 P(2,3,1)를 벡터 v<2,2,2>로 이동하려면 새 점 위치는: <br>
-P’ = P + **v** = (2+2, 3+2, 1+2) = (4, 5, 3)
+예를 들어, 점 P( 2, 3, 1 ) 를 벡터 v< 2, 2, 2 > 로 이동하려면 새 점 위치는: <br>
+P’ = P + **v** = ( 2+2, 3+2, 1+2 ) = ( 4, 5, 3 )
 
 행렬 형식을 사용하여 변환 행렬에 입력 포인트를 곱하면 다음과 같이 새 포인트 위치를 얻을 수 있습니다:
 
@@ -46,17 +46,18 @@ P’ = P + **v** = (2+2, 3+2, 1+2) = (4, 5, 3)
 
 ### Rotation transformation / 회전 변환
 
-이 섹션에서는 삼각법을 사용하여 z축과 원점을 중심으로 회전을 계산한 다음 회전에 대
-한 일반적인 행렬 형식을 추론하는 방법을 보여 줍니다. <br>
-x,y 평면 P(x,y)의 한 점을 각도(b)만큼 회전시킵니다. <br>
+이 섹션에서는 삼각법(trigonometry)을 사용하여 z축과 원점을 중심으로 회전을 계산한 다음 회전에 대한 일반적인 행렬 형식을 추론하는 방법을 보여 줍니다. <br>
+x, y 평면 P( x, y ) 의 한 점을 각도( b )만큼 회전시킵니다. <br>
 그림에서 다음과 같이 말할 수 있습니다:
+
+![Figure_000](https://github.com/user-attachments/assets/4fe25a9b-2625-4e9e-ac31-be8cd054c3fb)
 
 x = d cos(a) ---(1) <br>
 y = d sin(a) ---(2) <br>
 x' = d cos(b+a) ---(3) <br>
 y' = d sin(b+a) --- (4)
 
-각의 합의 사인과 코사인에 대한 삼각 신원을 사용하여 x'와 y'를 확장합니다:
+각의 합의 사인과 코사인에 대한 삼각 항등식(trigonometric identities)을 사용하여 x'와 y'를 확장합니다:
 
 x' = d cos(a)cos(b) - d sin(a)sin(b) ---(5) <br>
 y' = d cos(a)sin(b) + d sin(a)cos(b) ---(6)
@@ -88,9 +89,10 @@ y' = x sin(b) + y cos(b)
 <br>
 <br>
 
-### Scale transformation / 규모 변환
+### Scale transformation / Scale(규모) 변환
 
-지오메트리의 크기를 조정하려면 배율과 축척 중심이 필요합니다. 배율은 x, y, z 방향으로 균일하게 배율을 조정하거나 각 차원에 대해 고유할 수 있습니다. 점의 배율은 다음 공식을 사용할 수 있습니다:
+지오메트리의 크기를 조정하려면 배율(scale factor)과 축척 중심(center of scale)이 필요합니다. 배율은 x, y, z 방향으로 균일하게 배율을 조정하거나 각 차원에 대해 고유할 수 있습니다(can be unique for each dimension.). <br>
+점의 배율은 다음 공식을 사용할 수 있습니다:
 
 P' = ScaleFactor(S) * P
 
@@ -147,7 +149,7 @@ P'.z = S<sub>z</sub> * P.z
 
 ### Planar Projection transformation / 평면 투영 변환
 
-직관적으로, 주어진 3D 점 P(x,y,z)의 월드 xy-평면 투영점은 z 값을 0으로 설정하면 P<sub>xy</sub> (x,y,0)와 같습니다. 마찬가지로, 점 P의 xz 평면 투영점은 P<sub>xz</sub> (x,0,z)입니다. yz-평면으로 투영할 경우 P<sub>xz</sub> = (0,y,z)가 됩니다. 이를 직교 투영이라고 합니다<sup>1</sup>. 
+직관적으로, 주어진 3D 점 P( x, y, z )의 월드 xy-평면 투영점은 z 값을 0으로 설정하면 P<sub>xy</sub> ( x, y, 0 )와 같습니다. 마찬가지로, 점 P의 xz 평면 투영점은 P<sub>xz</sub> ( x, 0, z )입니다. yz-평면으로 투영할 경우 P<sub>yz</sub> = ( 0, y, z )가 됩니다. 이를 직교 투영이라고 합니다<sup>1</sup>.
 
 입력으로 커브를 가지고 평면 투영 변환을 적용하면 해당 평면에 투영된 커브를 얻을 수 있습니다. 다음은 행렬 형식을 사용하여 xy 평면에 투영된 커브의 예시입니다.
 
@@ -157,3 +159,8 @@ P'.z = S<sub>z</sub> * P.z
 ![Figure_(24)](https://github.com/user-attachments/assets/76ac9b26-08d7-484d-9ef7-aec180ba9479) <br>
 *Figure (24): Projection matrices.* <br>
 *그림 (24): 투영 행렬.*
+
+<br>
+
+---
+¹ [Wikipedia: Bézier curve](https://en.wikipedia.org/wiki/B%C3%A9zier_curve)
