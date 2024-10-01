@@ -16,11 +16,11 @@ Note <br>
 
 스크립트 컴포넌트를 생성하여 Grasshopper에서 Python 스크립팅에 대해 알아봅시다. 수학 탭과 스크립트 패널로 이동하여 Python 3 스크립트 컴포넌트를 캔버스에 끌어다 놓습니다. 사용할 수 있는 IronPython 2 Script 컴포넌트도 있습니다. 차이점은 위를 참조하세요:
 
-    Figure_57
+![Figure_57](https://github.com/user-attachments/assets/e6431977-5c4b-4109-bbd8-73d462fdfa3f)
 
 모든 언어를 실행할 수 있는 일반 스크립트 컴포넌트를 사용할 수도 있으며 [ ● ● ● ] 메뉴에서 파이썬 3을 선택할 수도 있습니다:
 
-    Figure_58
+![Figure_58](https://github.com/user-attachments/assets/67c5faa5-6b6b-42b1-b328-afee0196e1ef)
 
 <br>
 
@@ -28,11 +28,11 @@ Note <br>
 
 이제 컴포넌트를 두 번 클릭하여 스크립트 편집기를 열 수 있습니다. 컴포넌트가 이 컴포넌트와 연결된 편집기를 가리키는 원뿔을 그린다는 점에 유의하세요.
 
-    Figure_59
+![Figure_59](https://github.com/user-attachments/assets/d32eed9c-7473-4af8-97a8-9efb6678ce34)
 
 스크립트 편집기의 상태 표시줄에 Python 언어 버전이 표시됩니다:
 
-    Figure_60
+![Figure_60](https://github.com/user-attachments/assets/6555bf3e-6dcc-4b0a-b7b0-410aaeaeb260)
 
 <br>
 
@@ -40,7 +40,7 @@ Note <br>
 
 언제든지 스크립트 구성 요소를 마우스 오른쪽 버튼으로 클릭하여 구성 요소의 동작 방식을 변경할 수 있는 몇 가지 옵션에 액세스할 수 있습니다. **Preview**, **Enable**, and **Bake**와 같은 다른 Grasshopper 구성 요소와 공통된 몇 가지 옵션을 알고 계실 것입니다. 아래에서 이 스크립트 컴포넌트와 관련된 모든 옵션에 대해 자세히 설명하겠습니다:
 
-    Figure_61
+![Figure_61](https://github.com/user-attachments/assets/f2975da6-01bb-486a-90b6-f20680a78394)
 
 #### Advanced Options
 
@@ -50,7 +50,7 @@ Shift 키를 누른 상태에서 컴포넌트를 마우스 오른쪽 버튼으�
 
 Grasshopper의 스크립트는 파일로 저장되지 않습니다. 대부분 스크립트 컴포넌트 안에 포함되어 있습니다. 스크립트 이름을 지정하려면 기본적으로 구성 요소 자체의 이름을 변경합니다. 스크립트 탭과 중단점 패널에는 스크립트 이름이 반영됩니다:
 
-    Figure_62
+![Figure_62](https://github.com/user-attachments/assets/304b81d2-4214-4f89-a500-548d1284f9f1)
 
 <br>
 
@@ -58,11 +58,11 @@ Grasshopper의 스크립트는 파일로 저장되지 않습니다. 대부분 �
 
 스크립트 컴포넌트에서 가장 중요한 개념은 입력/출력입니다. 스크립트 컴포넌트는 줌 가능한 사용자 인터페이스(줄여서 ZUI)를 지원합니다. 즉, 삽입 [ ⊕ ] 및 제거 [ ⊖ ] 컨트롤이 양쪽에 표시될 때까지 확대하여 컴포넌트의 입력 및 출력을 수정할 수 있습니다:
 
-    Figure_63
+![Figure_63](https://github.com/user-attachments/assets/6f922394-683a-4ba7-8f0e-be3909472cc9)
 
 기본적으로 스크립트 컴포넌트에는 x 와 y 입력이 있고 출력으로 out 과 a가 있습니다. 양쪽의 모든 매개변수가 제거되면 컴포넌트는 해당 쪽에 들쭉날쭉한 가장자리를 그립니다. 모든 스크립트에 입력이 필요하거나 값을 출력으로 생성하는 것은 아니므로 이는 완전히 괜찮습니다:
 
-    Figure_64
+![Figure_64](https://github.com/user-attachments/assets/075ed931-11ef-4675-b6f7-83eba6ff4129)
 
 매개변수를 추가할 때마다 새 임시 이름이 할당됩니다. 매개변수 자체를 마우스 오른쪽 버튼으로 클릭하여 이름을 편집할 수 있습니다. 다른 사람들이 컴포넌트에 전달할 입력의 종류나 이러한 입력의 용도를 이해할 수 있도록 매개변수에 의미 있는 이름을 지정하는 것이 좋습니다.
 
@@ -72,7 +72,7 @@ Grasshopper의 스크립트는 파일로 저장되지 않습니다. 대부분 �
 
 모든 프로그래밍 언어에는 해당 언어 구조에 사용되는 예약어(또는 키워드) 집합이 있습니다. 예를 들어 Python에서는 dir, filter 또는 str이라는 단어가 모두 예약어입니다. Python 스크립트 컴포넌트는 입력 또는 출력 매개변수에 이러한 키워드를 사용할 때 경고를 표시하지만 사용을 막지는 않습니다. Python 언어 자체는 dir 또는 filter와 같은 기본 제공 함수에 값을 할당하는 것을 막지 않으며 이 컴포넌트는 이 동작을 따릅니다:
 
-    Figure_65
+![Figure_65](https://github.com/user-attachments/assets/502b3535-0c21-4624-ba40-e4d23f0209b7)
 
 이러한 키워드에 대한 자세한 내용은 파이썬 3 키워드 및 파이썬 3 내장 함수에서 확인하세요.
 
@@ -82,17 +82,17 @@ Grasshopper의 스크립트는 파일로 저장되지 않습니다. 대부분 �
 
 out 출력 매개변수는 특별합니다. 스크립트가 콘솔에 출력하는 모든 내용을 캡처합니다(print()). 캡처된 출력은 이 매개변수에 하나의 문자열 또는 여러 문자열(각 줄에 하나씩)로 전달됩니다. 기본 동작은 콘솔에 인쇄되는 각 줄이 out 매개변수에 하나의 항목이 되는 것입니다:
 
-    Figure_66
+![Figure_66](https://github.com/user-attachments/assets/b851c9ff-7e2b-4f51-908a-c8021c741471)
 
 출력 줄 접목 방지 옵션을 사용하여 단일 줄과 다중 줄 동작을 제어할 수 있습니다. 이 옵션을 선택하면 모든 콘솔 출력이 하나의 단일 항목으로 out 파라미터에 전달됩니다.
 
-    Figure_67
+![Figure_67](https://github.com/user-attachments/assets/6a21f27b-e443-4775-97a8-3c5b2fa1f802)
 
 #### Toggling Output
 
 스크립트가 출력에 아무것도 인쇄하지 않는 경우 컴포넌트 컨텍스트 메뉴의 표준 출력/오류 매개변수 옵션을 사용하여 출력 및 토글할 수 있습니다. 이 옵션을 선택하면 출력 매개변수가 첫 번째 출력 매개변수로 추가됩니다. 그렇지 않으면 제거됩니다:
 
-    Figure_68
+![Figure_68](https://github.com/user-attachments/assets/b0fa8d3d-ac7b-4279-b171-e04ec2d5a77f)
 
 out 매개변수를 제거하면 스크립트 컴포넌트가 출력 캡처, 처리(줄로 분할), 결과 설정 등을 시도하지 않기 때문에 스크립트 컴포넌트의 성능이 약간 향상될 수 있습니다. 이러한 성능 향상은 단일 컴포넌트에서는 의미가 없을 수 있지만, 데이터를 처리하기 위해 각각 수천 번 실행되는 여러 스크립트 컴포넌트가 있는 대규모 Grasshopper 정의에서는 눈에 띄게 향상될 수 있습니다. 일반적으로 사용하지 않을 때는 out 매개변수를 해제하는 것이 좋습니다.
 
@@ -108,13 +108,13 @@ out 매개변수를 제거하면 스크립트 컴포넌트가 출력 캡처, 처
 
 x와 y 입력이 연결되지 않아서 어떤 값도 전달하지 않는 경우(값은 None), 파이썬은 None을 다른 None에 추가하는 방법을 모르기 때문에 이 컴포넌트가 실행될 때 에러를 던집니다:
 
-    Figure_69
+![Figure_69](https://github.com/user-attachments/assets/c3dfbaf0-6ac9-4ac7-b13d-be408cf86200)
 
 유형 안전성이란 실제로 언어가 컴파일 중에(스크립트를 실행하기 전에) 변수 유형을 감지하고 연산이나 함수 호출이 특정 변수 유형을 지원하지 않는 경우 오류를 발생시키는 것을 의미합니다. 하지만 앞서 언급했듯이 파이썬은 타입 안전하지 않기 때문에 컴파일 중에 a = x + y에서 + 연산을 지원하는 값을 제공할 것이라고 가정합니다. 따라서 스크립트를 실행하는 동안 위에 표시된 오류가 발생합니다.
 
 이 예제에서는 정수와 같이 덧셈을 지원하는 값을 제공하면 컴포넌트가 오류 없이 실행됩니다:
 
-    Figure_70
+![Figure_70](https://github.com/user-attachments/assets/7ee5c267-b54f-420d-ba73-ee6a1a015283)
 
 <br>
 
@@ -122,15 +122,15 @@ x와 y 입력이 연결되지 않아서 어떤 값도 전달하지 않는 경우
 
 스크립트의 입력값을 변환해야 하는 경우가 많습니다. Grasshopper에서 잘 알려진 매개변수 변환은 우리 모두가 잘 알고 사랑하는 기능입니다. 예를 들어 Line 매개변수를 숫자 매개변수로 전달하면 자동으로 줄의 길이를 숫자 매개변수의 값으로 가져올 수 있습니다:
 
-    Figure_71
+![Figure_71](https://github.com/user-attachments/assets/f59ede22-e076-4b3f-bfea-ef6274f5a59f)
 
 이러한 자동 변환을 스크립트 컴포넌트 입력 파라미터에 쉽게 적용할 수 있습니다. 이 예제에서는 두 개의 Line 값이 Python 스크립트 a = x + y에 전달됩니다. x와 y 입력 모두 부동 소수점 값을 보유할 수 있는 float 유형 힌트(Grasshopper의 숫자)가 할당되었습니다:
 
-    Figure_72
+![Figure_72](https://github.com/user-attachments/assets/cdc795c7-246c-4176-a210-d8b2a79f3489)
 
 따라서 스크립트를 실행하기 전에 두 입력 줄은 유형 힌트에 의해 플로트 값으로 변환되고 출력 a는 줄 길이의 합으로 설정됩니다:
 
-    Figure_73
+![Figure_73](https://github.com/user-attachments/assets/be3d9656-e3cd-44a9-a9c6-a8a2c9006505)
 
 선택할 수 있는 유형 힌트는 다양합니다. 입력 및 출력 매개변수 모두에서 사용할 수 있습니다.
 
@@ -140,21 +140,21 @@ x와 y 입력이 연결되지 않아서 어떤 값도 전달하지 않는 경우
 
 컴포넌트 입력 매개변수에는 컨텍스트 메뉴에 또 다른 유용한 옵션이 있습니다. 이 기능은 매개변수 액세스라고 하며 Grasshopper SDK(GH_ParamAccess)의 일부입니다:
 
-    Figure_74
+![Figure_74](https://github.com/user-attachments/assets/e2db1539-cfb0-4246-91ee-47b12da55aec)
 
 스크립트 컴포넌트 입력에서도 이 옵션을 수정할 수 있습니다:
 
-    Figure_75
+![Figure_75](https://github.com/user-attachments/assets/f409d3ce-7585-49a2-93f9-01ee3d5c81e0)
 
 다음은 세 가지 액세스 유형에 대해 x 매개변수에서 스크립트 컴포넌트에 전달되는 데이터 유형의 예입니다. Item 액세스의 경우 x는 숫자 값을 나타내는 개별 이중으로 전달되고, List 액세스의 경우 x는 한 분기에 모든 숫자 값을 포함하는 List<객체>로 설정되며, Tree 액세스의 경우 x는 입력의 모든 분기와 항목에 대한 액세스를 제공하는 DataTree<객체>로 설정된다는 점에 주목하세요:
 
-    Figure_76
+![Figure_76](https://github.com/user-attachments/assets/4fe38998-9fb0-4353-abab-080a991c844b)
 
 항목 및 목록 액세스에는 기본 제공 파이썬 유형인 float 및 목록이 표시되지만, 트리 액세스에는 Grasshopper.DataTree[Object] 유형이 표시됩니다(데이터트리 참조). 이는 마샬링에서 논의되는 중요한 주제입니다.
 
 일반 데이터트리 구조가 올바른 유형을 사용하도록 하려면 입력 매개변수 x에 float 유형 힌트를 적용하면 됩니다. 일반 데이터트리 구조는 요소 유형으로 Double을 표시합니다. 이것은 큰 부동 소수점 값을 넣을 수 있는 Grasshopper의 숫자 매개변수 유형으로, 파이썬의 float와 다소 유사합니다:
 
-    Figure_77
+![Figure_77](https://github.com/user-attachments/assets/98752327-e24d-4931-a0dd-0a3462eef275)
 
 ### Extracting Parameters
 
@@ -162,11 +162,11 @@ Grasshopper를 사용하면 컴포넌트에서 입력 파라미터를 추출할 
 
 매개변수의 오른쪽 클릭 메뉴에서 추출을 선택하여 스크립트 입력을 추출할 수 있습니다:
 
-    Figure_78
+![Figure_78](https://github.com/user-attachments/assets/71dfa711-c7d0-492d-a017-63c61d48079d)
 
 매개변수에 유형 힌트가 설정되어 있는 경우, 추출된 부동형 매개변수는 해당 데이터 유형이 됩니다:
 
-    Figure_79
+![Figure_79](https://github.com/user-attachments/assets/abd024a9-10db-4008-9be9-196af21d9cbf)
 
 <br>
 
@@ -178,7 +178,7 @@ Grasshopper에서 Python 스크립트를 작성하는 방법에는 두 가지가
 
 다음은 또 다른 간단한 예입니다:
 
-    Figure_80
+![Figure_80](https://github.com/user-attachments/assets/e730667e-eb6c-4145-9228-f08eed4c5372)
 
 스크립트가 시작되기 전에 x 입력 매개변수가 마술처럼 정의되고 설정되는 것을 볼 수 있습니다. 파이썬 3 스크립트 컴포넌트이므로 F-Strings나 Walrus 연산자 같은 새로운 구문 기능을 사용할 수 있습니다.
 
@@ -248,11 +248,11 @@ Python 스크립트 컴포넌트에서도 비슷한 방식으로 스크립트를
 
 기본 스크립트를 SDK 모드로 변환하려면 편집기 대시보드에서 GH_ScriptInstance로 변환 버튼을 클릭합니다:
 
-    Figure_81
+![Figure_81](https://github.com/user-attachments/assets/0646b6dd-dc90-4230-bcbe-dc79cabdc2f3)
 
 기존 코드는 GH_ScriptInstance 클래스의 구현 안에 배치됩니다. RunScript 메서드가 이미 추가되어 있고 시그니처에 컴포넌트 입력이 있는 것을 확인할 수 있습니다:
 
-    Figure_82
+![Figure_82](https://github.com/user-attachments/assets/318577f8-86c5-43ec-a982-d055d3d5b25c)
 
 GH_ScriptInstance는 Grasshopper 컴포넌트와 유사하게 아래 메서드를 구현하는 베이스 클래스입니다:
 + BeforeRunScript: 컴포넌트가 입력을 풀기 전에 코드를 실행합니다.
@@ -269,7 +269,7 @@ GH_ScriptInstance는 Grasshopper 컴포넌트와 유사하게 아래 메서드�
 
 RunScript 메서드 서명에는 모든 컴포넌트 입력과 출력이 이름과 데이터 유형(유형 힌트에 따라)에 따라 포함됩니다. 출력 값은 반환 문을 사용하여 반환해야 합니다:
 
-    Figure_83
+![Figure_83](https://github.com/user-attachments/assets/47ae4de7-6c35-47ea-ab2e-671e5741e041)
 
 컴포넌트의 로직을 RunScript 블록 안에 작성하고 입력값을 받아 계산한 후 출력을 반환할 수 있습니다. 다른 Grasshopper 컴포넌트와 마찬가지로, 입력 데이터의 페어링에 따라 RunScript 메서드가 여러 번 호출될 수 있습니다.
 
@@ -277,7 +277,7 @@ RunScript 메서드 서명에는 모든 컴포넌트 입력과 출력이 이름�
 
 x와 y 입력에 유형이 어떻게 힌트되는지 주목하세요. 이것은 유형 힌트(Type Hinting)라고 하는 Python 3의 기능이며 Grasshopper의 유형 힌트와 혼동해서는 안 됩니다. Python 3 유형 힌트는 Python 코드의 정적 분석(예: 자동 완성, 진단 등)에만 사용되며 스크립트 실행에는 아무런 영향을 미치지 않습니다. 위의 예에서, 입력 y는 Rhino.Geometry.Plane 유형으로 힌트되어 자동완성에서 y의 유형을 결정하고 더 나은 자동완성을 제공하는 데 도움이 됩니다:
 
-    Figure_84
+![Figure_84](https://github.com/user-attachments/assets/3d7c13f6-137a-415a-81c1-1912bc3a5469)
 
 #### RunScript Returns
 
@@ -316,18 +316,18 @@ x와 y 입력에 유형이 어떻게 힌트되는지 주목하세요. 이것은 
 + 에디터의 그래스호퍼 메뉴에서 솔브인스턴스 오버라이드 추가(**Add SolveInstance Overrides**) 메뉴를 클릭합니다.
 + 직접 입력하기
 
-    Figure_85
+![Figure_85](https://github.com/user-attachments/assets/6672e1b4-87b6-4c9d-b275-606d1eec7765)
 
 이 두 메서드는 클래스 구현에 추가됩니다:
 
-    Figure_86
+![Figure_86](https://github.com/user-attachments/assets/ca5ffb71-a7b2-4711-a388-f6147ef804bc)
 
 Note <br>
 이 두 메서드를 사용하는 좋은 예는 BeforeRunScript 중에 클래스 인스턴스에 인스턴스 변수를 설정하고 AfterRunScript 중에 실행 후 정리하는 것입니다. 컴포넌트는 이러한 메서드 내에서 출력 매개변수를 변경할 수 없습니다.
 
 이러한 각 메서드는 이 컴포넌트가 완전히 실행될 때마다 한 번만 실행됩니다. 이러한 메서드에 몇 개의 인쇄문을 넣고 실행 순서를 확인할 수 있습니다:
 
-    Figure_87
+![Figure_87](https://github.com/user-attachments/assets/bb7eecbc-e99e-49b9-9db9-632457232fdd)
 
 이 예시에는 스크립트 컴포넌트에 입력을 제공하기 위해 두 개의 범위 컴포넌트가 포함되어 있습니다. 각 범위 컴포넌트는 3개의 항목을 출력하며, 스크립트 컴포넌트의 관련 입력 매개변수에는 실수 유형 힌트가 할당되어 있습니다. 즉, 실행 스크립트 메서드가 3쌍의 x와 y에 대해 3번 실행됩니다.
 
@@ -349,11 +349,11 @@ Note <br>
 + 편집기의 **Grasshopper** 메뉴에서 미리보기 오버라이드 추가(**Add Preview Overrides**) 메뉴를 클릭합니다.
 + 직접 입력하기
 
-    Figure_88
+![Figure_88](https://github.com/user-attachments/assets/a599b4c5-abb4-43fb-83c7-69eb686931c0)
 
 이 두 메서드는 클래스 구현에 추가됩니다:
 
-    Figure_89
+![Figure_89](https://github.com/user-attachments/assets/9cf1e010-89bb-4c93-9ece-5f8445cdd1a3)
 
 DrawViewportWires가 먼저 호출되며 여기에서 점과 곡선을 그릴 수 있습니다. DrawViewportMeshes는 나중에 호출되며 여기에서 메쉬와 같은 투명한 도형을 그릴 수 있습니다.
 
@@ -361,13 +361,13 @@ ClippingBox 속성 구현도 추가되었습니다. 기본값은 BoundingBox.Emp
 
 다음은 Rhino 뷰포트의 왼쪽 상단에 2D로 채워진 직사각형을 그리는 컴포넌트의 예입니다:
 
-    Figure_90
+![Figure_90](https://github.com/user-attachments/assets/adccc976-c997-4b66-abc6-dbc75baa332e)
 
 이러한 미리보기 오버라이드 메서드에는 IGH_PreviewArgs 유형의 인수가 전달됩니다. 위의 예에서 볼 수 있듯이, Rhino DisplayPipeline 인스턴스이며 유용한 그리기 메서드가 많이 있는 args.Display 프로퍼티에 액세스할 수 있습니다.
 
 args: Grasshopper.Kernel.IGH_PreviewArgs 유형 힌트(type hint)를 추가하면, args 변수에서 더 나은 자동 완성 결과를 얻을 수 있습니다:
 
-    Figure_91
+![Figure_91](https://github.com/user-attachments/assets/d9120863-9331-4c3e-8c76-ed8bbe487d01)
 
 System.Drawing vs Eto.Drawing <br>
 Rhino 8 이상에서는 주로 Eto라는 UI 프레임워크를 사용합니다. 그러나 Grasshopper 1은 이 프레임워크가 채택되기 이전 버전으로, 그래픽 인터페이스에 System.Drawing 프레임워크를 사용합니다. 둘 다 비슷한 데이터 구조(예: 직사각형)를 가지고 있지만, Grasshopper 미리보기 오버라이드로 작업할 때 System.Drawing 데이터 유형을 사용한다는 점을 알아두는 것이 중요합니다.
@@ -394,11 +394,11 @@ The ubiquitous rhinoscriptsyntax modules(보통 rs로 가져오기)은 고유 �
 
 + 출력 매개변수는 기본적으로 고유 식별자를 관련 Rhino 문서 요소로 자동 변환합니다. 이 기능은 컴포넌트 컨텍스트 메뉴 항목 출력 안내선 마샬링 방지에서 토글할 수 있습니다:
 
-    Figure_92
+![Figure_92](https://github.com/user-attachments/assets/7c36f07d-e8b3-4e4c-ad1c-d32cd6aaf6f5)
 
 Type Hint가 **ghdoc Object**인 입력 매개변수는 입력 Rhino 문서 요소를 고유 식별자로 자동 마샬링하여 rhinoscriptsyntax 함수에 전달할 수 있도록 합니다. 위의 예에서 출력 Sphere를 ghdoc Object의 유형 힌트를 가진 구의 입력이 있는 또 다른 스크립트 컴포넌트에 전달하면, 구에 포함된 실제 값이 고유 식별자가 됩니다. 이 식별자를 rs.RebuildSurface에 전달하여 구체를 다시 빌드할 수 있습니다:
 
-    Figure_93
+![Figure_93](https://github.com/user-attachments/assets/d51e4529-1e28-41ce-8716-c8ea54003b76)
 
 Note <br>
 입력 요소를 고유 식별자로 마샬링할 때 해당 요소는 프록시 헤드리스 문서(proxy headless document)에 저장됩니다. 그런 다음 이 문서는 스크립트 실행 기간 동안 scriptcontext.doc에 할당됩니다(Grasshopper 컨텍스트를 나타내기 위해 scriptcontext.id == 2 설정과 함께). 모든 rhinoscriptsyntax 함수는 이 프록시 문서를 사용하여 작업을 수행하므로 모든 것이 원활하게 실행됩니다.
@@ -413,7 +413,7 @@ Note <br>
 
 스크립트 모드에서 파이썬 3 스크립트로 작업할 때 닷넷 데이터 유형은 자동으로 파이썬 3 데이터 유형으로 마샬링됩니다. 따라서 List<int> 입력은 정수만 포함된 파이썬 목록으로 변환됩니다. 이 동작은 컴포넌트 고급 옵션의 입력 마샬링 방지(**Avoid Marshalling Inputs**) 항목을 사용하여 전환할 수 있습니다. 아래 예시에서 입력 매개변수 x는 Access of List를 가집니다. 위쪽 컴포넌트는 기본적으로 닷넷 입력 List<>를 파이썬 목록으로 변환하고 있으며, 아래쪽 컴포넌트는 마샬링 입력 회피가 선택되어 있어 변환을 건너뛰고 있습니다.
 
-    Figure_94
+![Figure_94](https://github.com/user-attachments/assets/dfea6500-50de-4d15-9bb5-57fedceaac83)
 
 SDK 모드에서 작업할 때 Access가 List인 입력 매개변수는 런스크립트 구문에서 dotnet List<>로 정의되며, 기본적으로 입력 마샬링 방지 옵션이 선택되어 있습니다. 아래 예제에서 입력 매개변수 x는 Access of Item과 Type Hint가 정수입니다. 런스크립트 서명에서 매개변수 x가 x로 힌트된 것을 확인할 수 있습니다: System.Collections.Generic.List<int>:
 
@@ -430,7 +430,7 @@ SDK 모드에서 작업할 때 Access가 List인 입력 매개변수는 런스�
 Note <br>
 여러 Python 3 컴포넌트가 함께 작동하는 경우, 데이터가 중간에 다른 컴포넌트의 개입 없이 한 Python 3 컴포넌트에서 다른 Python 3 컴포넌트로 직접 흐르기 때문에 입력 및 출력 마샬링을 피할 수 있는 옵션이 있습니다. 이 경우 파이썬 목록을 닷넷 List<>로 변환했다가 다시 파이썬 목록으로 변환할 필요가 없습니다. Upstream 컴포넌트에서 마샬링 출력을 피하기만 하면 변환 없이 정확히 동일한 데이터가 downstream 으로 전달됩니다. 이제 single python list instance 를 전달하므로 컴포넌트 사이의 Grasshopper 와이어는 한 줄입니다:
 
-    Figure_95
+![Figure_95](https://github.com/user-attachments/assets/2b8e92fa-d04f-484a-9a18-e6f0270f98a9)
 
 <br>
 
@@ -440,15 +440,15 @@ Note <br>
 
 마우스 커서를 스크립트 줄의 왼쪽으로 이동하고 클릭하여 중단점을 추가합니다:
 
-    Figure_96
+![Figure_96](https://github.com/user-attachments/assets/81abaa33-919e-4d78-94ae-2dc0ae544b23)
 
 하단의 중단점 트레이에는 모든 중단점이 표시되며, 활성화/비활성화 또는 지우기 버튼이 제공됩니다:s
 
-    Figure_97
+![Figure_97](https://github.com/user-attachments/assets/4fc7da1d-a055-4367-ad84-29be0ad68b65)
 
 토글 버튼을 사용하여 중단점을 활성화 또는 비활성화합니다. 비활성화된 중단점은 편집기에서 회색 점으로 표시됩니다:
 
-    Figure_98
+![Figure_98](https://github.com/user-attachments/assets/90e9d23a-a008-442a-ba9d-fd6e55b71c08)
 
 중단점을 추가하면 에디터에서 몇 가지 UI가 변경되고 디버깅을 위한 몇 가지 유틸리티가 추가로 제공됩니다:
 + 실행 버튼이 디버그
@@ -461,11 +461,11 @@ Note <br>
 + 에디터 대시보드에서 디버그 제어 버튼을 활성화합니다.
 + 하단의 **Variables** 트레이를 열어 전역 및 로컬 변수를 표시합니다.
 
-    Figure_99
+![Figure_99](https://github.com/user-attachments/assets/a6453143-86b1-4b58-acba-78673beac4ba)
 
 에디터 대시보드의 디버그 제어 버튼을 사용하여 스크립트 실행을 제어할 수 있습니다:
 
-    Figure_100
+![Figure_100](https://github.com/user-attachments/assets/f9d898d6-6eb7-4012-8795-f19c94b1ed23)
 
 왼쪽부터 차례대로 설명합니다:
 + **Continue**: 다른 중단점에서 멈출 때까지 스크립트를 계속 실행합니다.
@@ -478,13 +478,13 @@ Note <br>
 
 이제 변수 패널에 x 및 y에 대한 새 값이 표시됩니다. 패널 헤더의 오른쪽 상단에 스크립트 실행(11개 중 2개)이 표시되어 Grasshopper가 x 및 y 입력 쌍으로 이 컴포넌트를 두 번째로 실행한다는 것을 알 수 있습니다:
 
-    Figure_101
+![Figure_101](https://github.com/user-attachments/assets/223baba3-b4a6-44ed-9ff5-2da67cf4a094)
 
 **Continue** 를 클릭하면 스크립트가 계속 실행되고 변수가 수정됩니다. 각 중지 시 변수 트레이에 전역 및 로컬 변수의 현재 값이 표시됩니다.
 
 디버그 중 언제든지 중지 버튼을 누르면 디버깅이 중지됩니다. 스크립트 컴포넌트에 디버그 중지 메시지와 함께 오류 표시가 표시됩니다:
 
-    Figure_102
+Figure_102
 
 디버그가 중지되면 에디터 UI가 다시 정상으로 바뀌고 변수 트레이에 변수의 마지막 상태가 표시됩니다. 트레이에는 다른 디버깅 세션이 시작될 때까지 이러한 데이터가 보관됩니다.
 
@@ -492,7 +492,7 @@ Note <br>
 
 변수 트레이는 스크립트에 있는 모든 전역 및 로컬 변수의 현재 값을 검사할 수 있는 훌륭한 도구입니다. 변수 데이터는 3개의 열이 있는 표에 표시됩니다: 이름, 값, 유형입니다. 각 변수에 대해 현재 값과 해당 변수가 보유하고 있는 데이터 유형을 확인할 수 있습니다. 빨간색 마커는 디버그 중에 변경된 변수를 강조 표시합니다:
 
-    Figure_103
+Figure_103
 
 필드와 속성이 있는 더 복잡한 데이터 유형의 경우 변수를 확장하여 해당 멤버의 현재 값을 확인할 수 있습니다:
 
