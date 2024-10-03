@@ -105,7 +105,7 @@ Rhino에서 스크립팅 기능을 처음 사용하는 경우, 편집기가 즉�
 
 ![Figure_16](https://github.com/user-attachments/assets/a30a664d-a930-4b39-8c90-700f21a38ae7)
 
-**Step Over** 를 한 번 더 클릭하면 스크립트가 14줄에서 중지됩니다. 이 시점에서 변수 트레이에 i 및 총 변수에 대한 현재 값(및 해당 데이터 유형)이 표시됩니다:
+**Step Over** 를 한 번 더 클릭하면 스크립트가 14줄에서 중지됩니다. 이 시점에서 변수 트레이에 i 및 총 변수에 대한 현재 값(및 해당 데이터 타입)이 표시됩니다:
 
 ![Figure_17](https://github.com/user-attachments/assets/7e351ba3-61ae-4ffb-8deb-56031b1b1d1c)
 
