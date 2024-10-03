@@ -442,7 +442,7 @@ Note <br>
 
 ![Figure_96](https://github.com/user-attachments/assets/81abaa33-919e-4d78-94ae-2dc0ae544b23)
 
-하단의 중단점 트레이에는 모든 중단점이 표시되며, 활성화/비활성화 또는 지우기 버튼이 제공됩니다:s
+하단의 중단점 트레이에는 모든 중단점이 표시되며, 활성화/비활성화 또는 지우기 버튼이 제공됩니다:
 
 ![Figure_97](https://github.com/user-attachments/assets/4fc7da1d-a055-4367-ad84-29be0ad68b65)
 
