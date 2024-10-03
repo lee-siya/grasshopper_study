@@ -484,7 +484,7 @@ Note <br>
 
 디버그 중 언제든지 중지 버튼을 누르면 디버깅이 중지됩니다. 스크립트 컴포넌트에 디버그 중지 메시지와 함께 오류 표시가 표시됩니다:
 
-Figure_102
+![Figure_102](https://github.com/user-attachments/assets/37247404-a8ff-4c01-afb1-26e2bd17cc4b)
 
 디버그가 중지되면 에디터 UI가 다시 정상으로 바뀌고 변수 트레이에 변수의 마지막 상태가 표시됩니다. 트레이에는 다른 디버깅 세션이 시작될 때까지 이러한 데이터가 보관됩니다.
 
@@ -492,25 +492,25 @@ Figure_102
 
 변수 트레이는 스크립트에 있는 모든 전역 및 로컬 변수의 현재 값을 검사할 수 있는 훌륭한 도구입니다. 변수 데이터는 3개의 열이 있는 표에 표시됩니다: 이름, 값, 타입입니다. 각 변수에 대해 현재 값과 해당 변수가 보유하고 있는 데이터 타입을 확인할 수 있습니다. 빨간색 마커는 디버그 중에 변경된 변수를 강조 표시합니다:
 
-Figure_103
+![Figure_103](https://github.com/user-attachments/assets/ba17e264-4487-41b9-982d-eedcd1be8a70)
 
 필드와 속성이 있는 더 복잡한 데이터 타입의 경우 변수를 확장하여 해당 멤버의 현재 값을 확인할 수 있습니다:
 
-    Figure_104
+![Figure_104](https://github.com/user-attachments/assets/5293975f-b14b-465e-9927-ba52fdeb45c6)
 
 값이 다른 값의 모음인 경우 변수를 확장하여 각 항목을 개별적으로 볼 수 있습니다. 이름 열에는 [0]과 같은 항목 인덱스가 표시됩니다:
 
-    Figure_105
+![Figure_105](https://github.com/user-attachments/assets/2aba6ae5-e502-497c-8748-dbe65f075389)
 
 ### Watch Tray
 
 Watch tray 는 Variables tray 와 매우 유사합니다. 주요 차이점은 Watch tray에는 특별히 감시하도록 추가한 변수만 표시된다는 점입니다. 트레이 도구 모음에서 표현식 추가(**Add Expression**) 버튼을 사용하여 새 변수를 감시 대상에 추가합니다. 추가된 표현식 항목에서 Enter 키를 눌러 변수 이름을 편집하고 입력합니다:
 
-    Figure_106
+![Figure_106](https://github.com/user-attachments/assets/714b8de4-b70d-49d7-9706-072b909732f9)
 
 디버그 중에 변수 값을 추출할 수 있으면 Watch tray 에 녹색 확인 표시가 나타납니다. 변수가 범위에 없는 경우 노란색 경고 아이콘이 표시됩니다:
 
-    Figure_107
+![Figure_107](https://github.com/user-attachments/assets/ac3e19fa-19b5-4f6e-bc3a-545203e49383)
 
 ### Call Stack Tray
 
@@ -518,11 +518,11 @@ Call Stack Tray에는 Call Stack 프레임이 표시됩니다. 이는 스크립�
 
 아래 예제에서는 RunScript를 실행하여 스크립트 실행을 시작했습니다. 그런 다음 스크립트에서 Sum 메서드를 호출했고, 지금 디버그 중에 일시 중지된 곳이 바로 이 지점입니다. 호출 스택 트레이에는 이 함수가 목록의 맨 위에 표시되고 바로 뒤에 RunScript가 표시됩니다. 변수 및 감시 트레이에도 현재 호출 프레임에 있는 변수의 값이 표시됩니다:
 
-    Figure_108
+![Figure_108](https://github.com/user-attachments/assets/e6b793cb-288f-476e-82a9-8ce245e8c2d8)
 
 다른 스택 프레임을 클릭하고 변수 또는 감시 트레이로 전환하여 해당 범위의 값을 검사할 수 있습니다:
 
-    Figure_109
+![Figure_109](https://github.com/user-attachments/assets/acb84016-0e7f-4632-b533-de32a6d75bce)
 
 Call Stack Tray 에는 스크립트의 여러 스레드에 대한 스택 프레임이 독립적으로 표시됩니다.
 
@@ -532,7 +532,7 @@ Call Stack Tray 에는 스크립트의 여러 스레드에 대한 스택 프레�
 
 Python 3 스크립트는 PyPI 패키지 서버에 게시된 타사 패키지의 이점을 활용할 수 있습니다. 패키지 설치 버튼을 사용하여 이러한 패키지를 설치하여 스크립트에서 사용할 수 있습니다:
 
-    Figure_110
+![Figure_110](https://github.com/user-attachments/assets/b2e64445-1db9-4792-aa30-cce47d9baf9a)
 
 패키지 설치 대화 상자에는 패키지 이름과 버전 요구 사항을 지정하는 방법에 대한 몇 가지 예가 나와 있습니다.
 
@@ -564,7 +564,7 @@ Python 3 스크립트는 PyPI 패키지 서버에 게시된 타사 패키지의 
 
 Python 스크립트는 NuGet 패키지 서버에 게시된 타사 패키지의 이점을 활용할 수 있습니다. 패키지 설치 대화 상자를 사용하여 패키지 소스 옵션을 NuGet으로 변경할 수 있습니다:
 
-    Figure_111
+![Figure_111](https://github.com/user-attachments/assets/8a2f5b22-5cb6-49e8-b0de-9e08befe9f93)
 
 패키지 설치 대화 상자에는 패키지 이름과 버전 요구 사항을 지정하는 방법에 대한 몇 가지 예가 나와 있습니다.
 
@@ -572,7 +572,7 @@ Python 스크립트는 NuGet 패키지 서버에 게시된 타사 패키지의 �
 
 아래 예제 스크립트에서 #r "nuget: RestSharp, 110.2.0" 줄을 아래 예제 스크립트에서 확인하세요. 형식은 NuGet 웹사이트의 스크립트 패키지 참조를 따릅니다:
 
-    Figure_112
+![Figure_112](https://github.com/user-attachments/assets/59c8f2ea-3591-4e90-b346-f106dc1ebad6)
 
 <br>
 
@@ -580,7 +580,7 @@ Python 스크립트는 NuGet 패키지 서버에 게시된 타사 패키지의 �
 
 Python 스크립트는 닷넷 어셈블리 파일을 직접 참조할 수도 있습니다. 패키지 설치 대화 상자를 사용하여 패키지 소스 옵션을 DLL 참조로 변경할 수 있습니다:
 
-    Figure_113
+![Figure_113](https://github.com/user-attachments/assets/fec74056-3cd4-4588-a497-a10ab4bc192a)
 
 어셈블리가 Rhino에 이미 로드되어 있는 경우, 어셈블리 이름을 입력하기만 하면 참조할 수 있습니다. 어셈블리 이름에 확장자가 포함되어 있는지 확인합니다(예: .dll) 아래 예제와 같은 패키지 참조는 선택적으로 스크립트에 추가됩니다:
 
@@ -614,37 +614,37 @@ Python 스크립트 컴포넌트에서 사용되는 스크립트 편집기에는
 
 편집기의 **Tools -> Options** 메뉴에서도 액세스할 수 있습니다. 물음표 아이콘 위에 마우스를 올리면 각 옵션에 대한 자세한 정보를 볼 수 있습니다:
 
-    Figure_114
+![Figure_114](https://github.com/user-attachments/assets/d1811893-97f7-406e-92ad-b8cb04218d42)
 
 #### Toggle Dashboard
 
 편집기 대시보드를 완전히 숨기고 스크립트를 위한 더 많은 공간을 확보할 수 있습니다:
 
-    Figure_115
+![Figure_115](https://github.com/user-attachments/assets/fd040cf6-7273-4cf3-9835-c3bd4ea4a9c8)
 
 #### Toggle Compact Dashboard
 
 대시보드가 표시되면 더 컴팩트하게 만들어 공간을 절약할 수 있습니다:
 
-    Figure_116
+![Figure_116](https://github.com/user-attachments/assets/907d63a2-c079-4252-932a-c893de9864ef)
 
 #### Toggle Compact Script Tabs
 
 디버그가 기본 스크립트 이외의 소스 파일로 이동하지 않는 한 기본적으로 Grasshopper 편집기에는 스크립트 탭이 표시되지 않습니다. 탭을 항상 표시하려면 이 옵션을 토글하세요:
 
-    Figure_117
+![Figure_117](https://github.com/user-attachments/assets/5704c9e1-f409-467c-9bb0-183474cb1aa0)
 
 #### Toggle Compact Browser
 
 기본적으로 브라우저 탭은 Grasshopper의 편집기 왼쪽에 표시되지 않습니다. 탭 선택기 버튼은 공간을 절약하기 위해 상태 표시줄에 표시됩니다. 왼쪽에 브라우저 탭을 표시하려면 이 옵션을 토글하세요:
 
-    Figure_118
+![Figure_118](https://github.com/user-attachments/assets/deecb96f-ca40-4fa1-8e9e-d2647a1544aa)
 
 #### Toggle Compact Console
 
 기본적으로 콘솔 탭은 Grasshopper의 편집기 하단 가장자리에 표시됩니다. 상태 표시줄에 탭 선택기 버튼을 표시하여 공간을 절약하려면 이 옵션을 토글하세요:
 
-    Figure_119
+![Figure_119](https://github.com/user-attachments/assets/cc80414e-3a42-40cb-80c8-eb281fdf02d2)
 
 <br>
 
@@ -654,13 +654,15 @@ Grasshopper 플러그인에 스크립트 컴포넌트를 게시하려는 경우 
 
 스크립트 컴포넌트를 마우스 오른쪽 버튼으로 클릭하고 툴팁에 적절한 값을 설정합니다. 이 설명은 스크립트를 게시할 때 사용되며 게시된 컴포넌트에 표시됩니다.
 
-    Figure_120
+![Figure_120](https://github.com/user-attachments/assets/d869cc89-4708-4837-992b-54ab89334564)
 
 모든 입력 및 출력 매개변수를 마우스 오른쪽 버튼으로 클릭하고 각 매개변수에 대해 이름(사람이 읽을 수 있는)과 도구 설명을 설정합니다. 사람이 읽을 수 있는 이름은 Grasshopper에서 **Display -> Draw Full Names** 를 활성화하면 표시됩니다. 사람이 읽을 수 있는 이름과 설명을 설정하면 컴포넌트에 필요한 입력과 제공하는 출력을 이해하는 데 도움이 되며, 일반적으로 게시된 컴포넌트로 작업하기가 더 쉬워집니다.
 
-    Figure_121
+![Figure_121](https://github.com/user-attachments/assets/40234da7-7dba-465e-bf75-6055292ef1e0)
 
-스크립트 구성 요소를 Grasshopper 플러그인에 게시하는 방법은 Rhino와 Grasshopper 플러그인 만들기에서 확인하세요.
+스크립트 구성 요소를 Grasshopper 플러그인에 게시하는 방법은 Rhino와 Grasshopper 플러그인 만들기에서 확인하세요. <br>
+[Creating Rhino Projects](https://developer.rhino3d.com/guides/scripting/projects-create/) <br>
+[Creating Rhino and Grasshopper Plugins](https://developer.rhino3d.com/guides/scripting/projects-publish/)
 
 <br>
 
@@ -668,7 +670,7 @@ Grasshopper 플러그인에 스크립트 컴포넌트를 게시하려는 경우 
 
 편집기의 템플릿 패널에서 몇 가지 템플릿 스크립트를 사용할 수 있습니다. 이러한 템플릿 중 하나를 두 번 클릭하여 스크립트의 내용을 해당 템플릿으로 바꿀 수 있습니다. 이 방법은 조금 더 복잡한 스크립트를 시작하기에 좋은 방법입니다:
 
-    Figure_122
+![Figure_122](https://github.com/user-attachments/assets/86886548-d691-440a-8394-6f3e3da00223)
 
 ### User Objects As Templates
 
@@ -688,7 +690,7 @@ Grasshopper 플러그인에 스크립트 컴포넌트를 게시하려는 경우 
 
 그래스호퍼 패널에서 Python 스크립트(공유 스크립트에는 아직 SDK 모드가 지원되지 않음)를 만들어 여러 스크립트 컴포넌트에 입력으로 전달할 수 있습니다. 스크립트 컴포넌트에는 고급 컨텍스트 메뉴에서 활성화할 수 있는 특수 스크립트 입력 매개변수가 있습니다. 이 입력을 토글하려면 컴포넌트를 Shift + 마우스 오른쪽 버튼으로 클릭하고 스크립트 입력 매개변수("**script**")를 선택합니다:
 
-    Figure_123
+![Figure_123](https://github.com/user-attachments/assets/f36964be-0c60-4a41-a155-9931dda07182)
 
 ### Language Specifier Directive
 
@@ -696,17 +698,17 @@ Grasshopper 플러그인에 스크립트 컴포넌트를 게시하려는 경우 
 
 또한 컴포넌트 아이콘이 일반 스크립트 아이콘으로 변경된다는 점에 유의하세요. 그 이유는 스크립트 입력이 있는 스크립트 컴포넌트는 지원되는 모든 언어를 실행할 수 있기 때문입니다. 두 번째 스크립트의 언어 지정자는 // #! csharp입니다:
 
-    Figure_124
+![Figure_124](https://github.com/user-attachments/assets/746bbd46-984e-43b4-9aa1-09b361cc6c1e)
 
 ### Output Script
 
 Grasshopper 패널에서 스크립트를 편집하는 것은 그리 편리하지 않습니다. 스크립트 구성 요소에는 고급 상황에 맞는 메뉴에서 활성화할 수 있는 특수 스크립트 출력 매개변수가 있습니다. 이 출력을 토글하려면 컴포넌트를 Shift + 마우스 오른쪽 버튼으로 클릭하고 스크립트 출력 매개변수("**script**")를 선택합니다:
 
-    Figure_125
+![Figure_125](https://github.com/user-attachments/assets/2d6df23e-2f27-4b2b-ba68-0d7a4223c6de)
 
 이러한 방식으로 첫 번째 컴포넌트를 사용하여 스크립트를 생성하고 사용하고, 다른 컴포넌트에 동일한 스크립트를 전달하여 모두 동일한 스크립트를 실행할 수 있습니다. 그리고 위와 같이 다른 언어의 스크립트도 스크립트 입력에 전달할 수 있습니다:
 
-    Figure_126
+![Figure_126](https://github.com/user-attachments/assets/ef321331-fc3e-4398-a9c7-eb9b83f014a8)
 
 <br>
 
@@ -714,11 +716,11 @@ Grasshopper 패널에서 스크립트를 편집하는 것은 그리 편리하지
 
 출력 매개변수에는 개별 미리보기 컨트롤이 있습니다. 이 옵션은 기본적으로 켜져 있으며 Grasshopper는 출력 매개변수의 지오메트리 값에 대한 미리보기를 렌더링합니다:
 
-    Figure_127
+![Figure_127](https://github.com/user-attachments/assets/b217e576-fe62-45fc-bf6d-e5c6e657569e)
 
 컴포넌트 컨텍스트 메뉴의 미리보기 메뉴를 사용하여 출력 매개변수에 대해 이 옵션을 끄고 미리 보기를 숨길 수 있습니다. 구가 미리 보기 상태인 동안에는 상자 미리 보기가 표시되지 않습니다:
 
-    Figure_128
+![Figure_128](https://github.com/user-attachments/assets/02069650-a892-4422-9439-1d06edbc6b84)
 
 <br>
 
